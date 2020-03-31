@@ -33,6 +33,9 @@
 		E92D73842433AA8800EF22A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73822433AA8800EF22A8 /* User.swift */; };
 		E92D738A2433AC0800EF22A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92D73892433AC0800EF22A8 /* Localizable.strings */; };
 		E92D738C2433AE2C00EF22A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D738B2433AE2C00EF22A8 /* Colors.xcassets */; };
+		E92D738F2433B09200EF22A8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D738E2433B09200EF22A8 /* Colors.swift */; };
+		E92D73912433B09A00EF22A8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73902433B09A00EF22A8 /* Images.swift */; };
+		E92D73932433B0A900EF22A8 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73922433B0A900EF22A8 /* Strings.swift */; };
 		E947D0D52433A20F005DCF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D42433A20F005DCF90 /* AppDelegate.swift */; };
 		E947D0D72433A20F005DCF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D62433A20F005DCF90 /* SceneDelegate.swift */; };
 		E947D0DB2433A216005DCF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E947D0DA2433A216005DCF90 /* Assets.xcassets */; };
@@ -92,6 +95,9 @@
 		E92D73822433AA8800EF22A8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E92D73892433AC0800EF22A8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E92D738B2433AE2C00EF22A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../Colors.xcassets; sourceTree = "<group>"; };
+		E92D738E2433B09200EF22A8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E92D73902433B09A00EF22A8 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		E92D73922433B0A900EF22A8 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E947D0D12433A20F005DCF90 /* piczzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piczzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E947D0D42433A20F005DCF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E947D0D62433A20F005DCF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -266,6 +272,16 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		E92D738D2433B06C00EF22A8 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				E92D738E2433B09200EF22A8 /* Colors.swift */,
+				E92D73902433B09A00EF22A8 /* Images.swift */,
+				E92D73922433B0A900EF22A8 /* Strings.swift */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
 		E947D0C82433A20F005DCF90 = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +307,7 @@
 		E947D0D32433A20F005DCF90 /* piczzie */ = {
 			isa = PBXGroup;
 			children = (
+				E92D738D2433B06C00EF22A8 /* sources */,
 				E92D73802433AA7B00EF22A8 /* models */,
 				E92D735F2433A89E00EF22A8 /* network_services */,
 				E92D73512433A71000EF22A8 /* feature */,
@@ -580,9 +597,11 @@
 				E92D73842433AA8800EF22A8 /* User.swift in Sources */,
 				E92D734E2433A5E800EF22A8 /* ImageCacheKey.swift in Sources */,
 				E92D736F2433A95500EF22A8 /* UserRepository.swift in Sources */,
+				E92D738F2433B09200EF22A8 /* Colors.swift in Sources */,
 				E92D73792433A96300EF22A8 /* HandleErrorNetwork.swift in Sources */,
 				E92D735E2433A7B800EF22A8 /* MainView.swift in Sources */,
 				E92D734D2433A5E800EF22A8 /* ImageCache.swift in Sources */,
+				E92D73932433B0A900EF22A8 /* Strings.swift in Sources */,
 				E947D0D52433A20F005DCF90 /* AppDelegate.swift in Sources */,
 				E947D0D72433A20F005DCF90 /* SceneDelegate.swift in Sources */,
 				E92D73752433A96300EF22A8 /* Constant.swift in Sources */,
@@ -590,6 +609,7 @@
 				E92D737F2433AA3D00EF22A8 /* UserRouter.swift in Sources */,
 				E92D734C2433A5E800EF22A8 /* ImageLoader.swift in Sources */,
 				E92D73772433A96300EF22A8 /* ServiceLayer.swift in Sources */,
+				E92D73912433B09A00EF22A8 /* Images.swift in Sources */,
 				E92D73832433AA8800EF22A8 /* Gift.swift in Sources */,
 				E92D73572433A77C00EF22A8 /* ProfilView.swift in Sources */,
 				E92D73782433A96300EF22A8 /* Request.swift in Sources */,
@@ -694,7 +714,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -748,7 +768,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -784,6 +804,7 @@
 			baseConfigurationReference = 8F808DE2290C8E4B20DE6A07 /* Pods-piczzie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"piczzie/Preview Content\"";
 				DEVELOPMENT_TEAM = Q2HCVR6WY8;
@@ -795,6 +816,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rooster.piczzie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
