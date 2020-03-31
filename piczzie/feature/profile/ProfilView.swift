@@ -77,8 +77,7 @@ struct ProfilView: View {
              ).aspectRatio(contentMode: .fit).onAppear {
                 self.profilVM.loadMore(currentItem: gift)
                     }
-                }.gridStyle(colums: 3)
-                )
+                }.gridStyle(columns: 3)
                 }
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
                 .background(Color.gray)
