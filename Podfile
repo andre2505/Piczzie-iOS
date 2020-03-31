@@ -4,9 +4,9 @@
 target 'piczzie' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for piczzie
-
+  pod 'WaterfallGrid', '~> 0.4.0'
   target 'piczzieTests' do
     inherit! :search_paths
     # Pods for testing

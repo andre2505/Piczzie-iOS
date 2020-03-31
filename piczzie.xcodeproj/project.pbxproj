@@ -347,6 +347,7 @@
 				E947D0CD2433A20F005DCF90 /* Sources */,
 				E947D0CE2433A20F005DCF90 /* Frameworks */,
 				E947D0CF2433A20F005DCF90 /* Resources */,
+				9DE076CF31F69A6151BBDBCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +385,7 @@
 				E947D0EE2433A217005DCF90 /* Sources */,
 				E947D0EF2433A217005DCF90 /* Frameworks */,
 				E947D0F02433A217005DCF90 /* Resources */,
+				2CA0461A665CB94CC800B59F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,6 +512,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CA0461A665CB94CC800B59F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piczzie-piczzieUITests/Pods-piczzie-piczzieUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piczzie-piczzieUITests/Pods-piczzie-piczzieUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-piczzie-piczzieUITests/Pods-piczzie-piczzieUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE076CF31F69A6151BBDBCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piczzie/Pods-piczzie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piczzie/Pods-piczzie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-piczzie/Pods-piczzie-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DAF00FC8F17DD464C6EE2658 /* [CP] Check Pods Manifest.lock */ = {

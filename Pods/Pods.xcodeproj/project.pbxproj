@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1641E053C4FA9332B744DB890A445A29 /* Pods-piczzie-piczzieUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C266A6EA70380860F6DEA2020ED24D7 /* Pods-piczzie-piczzieUITests-dummy.m */; };
-		1C41434A3B3CF035D57492BCB153CBF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1F6A9CA96AB59641A7FC441302A31CE4 /* Pods-piczzie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F814027A0D1050A9180A4D9186AC67E5 /* Pods-piczzie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60FA371516AC5F350D8A9B5D99FDC046 /* Pods-piczzie-piczzieUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C7C492BC7C6CBD0EE343D3427A77424 /* Pods-piczzie-piczzieUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		633BFE28FEA62BAC6A621863486FA0F2 /* Pods-piczzieTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E48C4E6039C30DFD3AF507CDA17D /* Pods-piczzieTests-dummy.m */; };
-		68F3FB02B8753EF869AC941DB3C05DB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6E4F7AC248A6B09CD6506499DC3248C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BC65BD6593780CF59A48263C557DC879 /* Pods-piczzie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6BFDF6E66B96DFABD8FDD6FF823254 /* Pods-piczzie-dummy.m */; };
-		DE11230B4F924B489AE3545B0C7C4881 /* Pods-piczzieTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A89E314049A4852BE2FCC485060823A7 /* Pods-piczzieTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25096B5658932384F66FE73CD783AFE3 /* PreferenceSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB536A30B10217BEF59539A5BBB8C936 /* PreferenceSetter.swift */; };
+		3FCA8F3AF6F93A437E9A048DC1633A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
+		3FF881A38E8C4F2A9DF31BE23CF9C1B7 /* WaterfallGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F935C34C039022B45114A53A7D0E7C /* WaterfallGrid-dummy.m */; };
+		402501A676EAC0C4D5D3D9078CDE0D04 /* WaterfallGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078AEA3B3AF000B09D1C89E9C8EC3B2 /* WaterfallGrid.swift */; };
+		4FEF308E1BD005355AF4A3C6C590BA24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
+		5B907EB7A97EBA7FAB28EA5C983AE062 /* GridSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8A270210D959E18D7AE4E167F30C /* GridSyle.swift */; };
+		633BFE28FEA62BAC6A621863486FA0F2 /* Pods-piczzieTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E0FAAEAA30FE2E2310CC0BEE3F59B /* Pods-piczzieTests-dummy.m */; };
+		65B51ABAB72E1BAB30E03D477EFAE80C /* ScrollOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F4888D797CB4971574A229372533D /* ScrollOptions.swift */; };
+		6E4F7AC248A6B09CD6506499DC3248C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
+		7420D51AEFBEDC25148B04536E02345D /* View+ScrollOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E236AABB7A8B95B2FC5A45EB86C75 /* View+ScrollOptions.swift */; };
+		85509ACC182C25E0759CC512147CAA5A /* WaterfallGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D527EBA41C9BDAC23E5EF6B7DA7E7B1F /* WaterfallGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A38878E360CA83DAD2B858615823232F /* PositiveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4FD9C4EC76ACB06C11C0790282163 /* PositiveNumber.swift */; };
+		AC485823271E0D635896BDB9AEDDA46C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2909F464F1E009B5A0483107219A1 /* SwiftUI.framework */; };
+		BA1B2036DF92B8C921060CAB67986357 /* Pods-piczzie-piczzieUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CD9B99C75430299BE047A07E1DB062 /* Pods-piczzie-piczzieUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0AE896DF5B853138A6F90CB10B2A924 /* Pods-piczzie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4CAB8065998BF046D7C1D3AB044503 /* Pods-piczzie-dummy.m */; };
+		CA86ECC2F43BA13BE0077FE3A3D70A39 /* Pods-piczzie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A5A8FD493DCCC9AE173B800FC26E3D1 /* Pods-piczzie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D61482C4C2E27C73CCD84ED2E6B3EE86 /* View+GridStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9BCB779F485261786BB6E25DA95FB /* View+GridStyle.swift */; };
+		DAC8A0D47F32186E426036C750172619 /* ElementPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A395344761DF1D08861516507C05A436 /* ElementPreference.swift */; };
+		DC96A577CDBD5DAD5EDB80B205FE468C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
+		DE11230B4F924B489AE3545B0C7C4881 /* Pods-piczzieTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2AC47A73366C9D242382707F75BCC0C /* Pods-piczzieTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7CEA079729AA8D6F2C8150C517BCA0E /* Pods-piczzie-piczzieUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA06AC61A0A9385D4D96798FF0AEA43 /* Pods-piczzie-piczzieUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		831A32CB36234DCE23560900E8409ECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16DB0A490A61C833A70BDE2217E0D5FD;
+			remoteInfo = WaterfallGrid;
+		};
+		85CC6B2FAC67ED6861DD3589F04629CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16DB0A490A61C833A70BDE2217E0D5FD;
+			remoteInfo = WaterfallGrid;
+		};
 		DD03AEEF6D70D8475972BE011673C9EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -29,43 +55,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C266A6EA70380860F6DEA2020ED24D7 /* Pods-piczzie-piczzieUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-piczzie-piczzieUITests-dummy.m"; sourceTree = "<group>"; };
-		2F6BFDF6E66B96DFABD8FDD6FF823254 /* Pods-piczzie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-piczzie-dummy.m"; sourceTree = "<group>"; };
-		3198A8A97AB0CFC89BD32B0106111C0F /* Pods-piczzie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie.debug.xcconfig"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3982E33D4B54F3F9C6343A184758C9D8 /* Pods-piczzie-piczzieUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-piczzieUITests-Info.plist"; sourceTree = "<group>"; };
-		4C6BFC69BD9389FDCB1A38F4F5464D66 /* Pods-piczzieTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-piczzieTests.modulemap"; sourceTree = "<group>"; };
-		4C887A650B7BD6F35183923717CB0E6F /* Pods-piczzieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzieTests.release.xcconfig"; sourceTree = "<group>"; };
+		01A814601CE49A71DBA313F5B9C38268 /* Pods-piczzieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzieTests.release.xcconfig"; sourceTree = "<group>"; };
+		040CECD0EBDD3CA9074961F33AD640FE /* Pods-piczzie-piczzieUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-piczzie-piczzieUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0EF4FD9C4EC76ACB06C11C0790282163 /* PositiveNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositiveNumber.swift; path = Sources/WaterfallGrid/Environment/PositiveNumber.swift; sourceTree = "<group>"; };
+		192C9A126E7BD80FF968001CDA93F87E /* Pods-piczzie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-piczzie-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B98FAC2C5E947EF140A6200083C4416 /* Pods-piczzie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-Info.plist"; sourceTree = "<group>"; };
+		2822701DB42AAB3BF5998D511C993EC6 /* Pods-piczzie-piczzieUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-piczzieUITests-Info.plist"; sourceTree = "<group>"; };
+		350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E1EA682F7DE2B25FB01AD32AE06B9C1 /* Pods-piczzieTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-piczzieTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F9C4FF1FE48927C0673CC8FC340CD11 /* Pods-piczzie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie.release.xcconfig"; sourceTree = "<group>"; };
+		421121A6A88DA597D0E85AB6AA4D2E49 /* WaterfallGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterfallGrid.modulemap; sourceTree = "<group>"; };
+		4EAFAA38494F8ECDFAD62A61972845C8 /* Pods-piczzieTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzieTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5078AEA3B3AF000B09D1C89E9C8EC3B2 /* WaterfallGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaterfallGrid.swift; path = Sources/WaterfallGrid/WaterfallGrid.swift; sourceTree = "<group>"; };
+		53A937086A20F566BC649C7B2E54BDC9 /* Pods-piczzie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-acknowledgements.plist"; sourceTree = "<group>"; };
+		56F935C34C039022B45114A53A7D0E7C /* WaterfallGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterfallGrid-dummy.m"; sourceTree = "<group>"; };
 		59B0A9816311589068CE28AE2D98A484 /* Pods_piczzieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_piczzieTests.framework; path = "Pods-piczzieTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF694EF8C0F898A055A0626764F1FB5 /* Pods-piczzie-piczzieUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-piczzieUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C7C492BC7C6CBD0EE343D3427A77424 /* Pods-piczzie-piczzieUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-piczzie-piczzieUITests-umbrella.h"; sourceTree = "<group>"; };
+		62DADB2A384885BF7ADCFEA5B860755E /* Pods-piczzie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-piczzie.modulemap"; sourceTree = "<group>"; };
+		641AD5CE8713B40C38BFEB0AEE7802D2 /* Pods-piczzie-piczzieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie-piczzieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		69483EE516118CA6A28BB92B979A460C /* Pods_piczzie_piczzieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_piczzie_piczzieUITests.framework; path = "Pods-piczzie-piczzieUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A7A7CF71B3DE5BAC0CB65BDC120A5B1 /* Pods-piczzieTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzieTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7E519A3CE9A50F6EBC6D12E1505EE6D9 /* Pods-piczzie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-Info.plist"; sourceTree = "<group>"; };
-		820E607CFDF7E1BDCD77FF69009FA97F /* Pods-piczzieTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-piczzieTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		903DF5667A6C0E420E0DA25D1D5B0DD0 /* Pods-piczzie-piczzieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie-piczzieUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A5A8FD493DCCC9AE173B800FC26E3D1 /* Pods-piczzie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-piczzie-umbrella.h"; sourceTree = "<group>"; };
+		718E236AABB7A8B95B2FC5A45EB86C75 /* View+ScrollOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+ScrollOptions.swift"; path = "Sources/WaterfallGrid/View+ScrollOptions.swift"; sourceTree = "<group>"; };
+		759E0FAAEAA30FE2E2310CC0BEE3F59B /* Pods-piczzieTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-piczzieTests-dummy.m"; sourceTree = "<group>"; };
+		7B75B0345BB6CA475AFD4C1F63C5CA23 /* Pods-piczzieTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzieTests-Info.plist"; sourceTree = "<group>"; };
+		7BA06AC61A0A9385D4D96798FF0AEA43 /* Pods-piczzie-piczzieUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-piczzie-piczzieUITests-dummy.m"; sourceTree = "<group>"; };
+		80E2909F464F1E009B5A0483107219A1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		8283B1CF6495F519AB39D4CBED34A861 /* Pods-piczzieTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-piczzieTests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A89E314049A4852BE2FCC485060823A7 /* Pods-piczzieTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-piczzieTests-umbrella.h"; sourceTree = "<group>"; };
-		CA0E7E2F52AB78AB6ACE5F793A67B3E4 /* Pods-piczzie-piczzieUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-piczzie-piczzieUITests.modulemap"; sourceTree = "<group>"; };
-		D4063648950F3B95C4277DD3534A3A08 /* Pods-piczzie-piczzieUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-piczzie-piczzieUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DDDF50EDB37E8FEA7E94C8A36C00AF43 /* Pods-piczzieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzieTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E13728D73D78E8A66C3EE3C221055DFA /* Pods-piczzie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie.release.xcconfig"; sourceTree = "<group>"; };
-		E9DC2DE743E061F14CBE7D3C5B0F7C35 /* Pods-piczzie-piczzieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie-piczzieUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		EB4D7FDC8B95353332959F10E1DD5175 /* Pods-piczzie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-acknowledgements.plist"; sourceTree = "<group>"; };
-		ED569B462D4BE7681F953DB1369525B7 /* Pods-piczzieTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzieTests-Info.plist"; sourceTree = "<group>"; };
-		F3CDC685F4256A5939482530A9EFD8FB /* Pods-piczzie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-piczzie-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2AC47A73366C9D242382707F75BCC0C /* Pods-piczzieTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-piczzieTests-umbrella.h"; sourceTree = "<group>"; };
+		A395344761DF1D08861516507C05A436 /* ElementPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementPreference.swift; path = Sources/WaterfallGrid/Preference/ElementPreference.swift; sourceTree = "<group>"; };
+		A65F4888D797CB4971574A229372533D /* ScrollOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollOptions.swift; path = Sources/WaterfallGrid/Environment/ScrollOptions.swift; sourceTree = "<group>"; };
+		AC6C8A270210D959E18D7AE4E167F30C /* GridSyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridSyle.swift; path = Sources/WaterfallGrid/Environment/GridSyle.swift; sourceTree = "<group>"; };
+		C10848A0E3A53E46015E668C1FB0EDFF /* Pods-piczzie-piczzieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie-piczzieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C8CA2523D48AFBD7DCAEB99E97E9FD /* Pods-piczzieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA69BBFC541E5C84C9E1D8E23C3CD47C /* Pods-piczzie-piczzieUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-piczzie-piczzieUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCDC666209803BEDEFE3DBA3101D11D9 /* WaterfallGrid-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterfallGrid-Info.plist"; sourceTree = "<group>"; };
+		CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterfallGrid.xcconfig; sourceTree = "<group>"; };
+		D527EBA41C9BDAC23E5EF6B7DA7E7B1F /* WaterfallGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallGrid-umbrella.h"; sourceTree = "<group>"; };
+		D6ED60FB5A7C02619A93BA1F8334FD1F /* Pods-piczzie-piczzieUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-piczzie-piczzieUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF7482496FFC5CF8E9E4CE006A2305A8 /* Pods-piczzie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-piczzie-frameworks.sh"; sourceTree = "<group>"; };
+		E3A0609525C5B681751F703B88451CB1 /* WaterfallGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WaterfallGrid.framework; path = WaterfallGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A9BCB779F485261786BB6E25DA95FB /* View+GridStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+GridStyle.swift"; path = "Sources/WaterfallGrid/View+GridStyle.swift"; sourceTree = "<group>"; };
+		F3CBE35B91AA4C3B2ED83291B8183BBD /* Pods-piczzie-piczzieUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-piczzie-piczzieUITests.modulemap"; sourceTree = "<group>"; };
 		F4A4D9075045F7FF0620B6591836C688 /* Pods_piczzie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_piczzie.framework; path = "Pods-piczzie.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F814027A0D1050A9180A4D9186AC67E5 /* Pods-piczzie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-piczzie-umbrella.h"; sourceTree = "<group>"; };
-		F9B7E48C4E6039C30DFD3AF507CDA17D /* Pods-piczzieTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-piczzieTests-dummy.m"; sourceTree = "<group>"; };
-		FAF611210FFAE8EB66BD18621B8A3167 /* Pods-piczzie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-piczzie.modulemap"; sourceTree = "<group>"; };
+		F5CCD495F3127A994A608C0192F54538 /* WaterfallGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallGrid-prefix.pch"; sourceTree = "<group>"; };
+		F9CD9B99C75430299BE047A07E1DB062 /* Pods-piczzie-piczzieUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-piczzie-piczzieUITests-umbrella.h"; sourceTree = "<group>"; };
+		F9DF1FB503822AF0EEC1CDF4949B052F /* Pods-piczzie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-piczzie.debug.xcconfig"; sourceTree = "<group>"; };
+		FB536A30B10217BEF59539A5BBB8C936 /* PreferenceSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreferenceSetter.swift; path = Sources/WaterfallGrid/Preference/PreferenceSetter.swift; sourceTree = "<group>"; };
+		FF4CAB8065998BF046D7C1D3AB044503 /* Pods-piczzie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-piczzie-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23CA91325C3B36B78562E3675FB1A613 /* Frameworks */ = {
+		70DC18D6D29265F08887E63698CA61CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C41434A3B3CF035D57492BCB153CBF8 /* Foundation.framework in Frameworks */,
+				DC96A577CDBD5DAD5EDB80B205FE468C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE8060489A8534B63545AC0E72AF66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCA8F3AF6F93A437E9A048DC1633A00 /* Foundation.framework in Frameworks */,
+				AC485823271E0D635896BDB9AEDDA46C /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,109 +130,153 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0E76DD9D896FE5A4B2A8B01D6530373 /* Frameworks */ = {
+		9491D43E13CC51651B512F5EDAE3F6AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F3FB02B8753EF869AC941DB3C05DB4 /* Foundation.framework in Frameworks */,
+				4FEF308E1BD005355AF4A3C6C590BA24 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		409D6825D8970433B267154D0E85F154 /* Pods-piczzieTests */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C6BFC69BD9389FDCB1A38F4F5464D66 /* Pods-piczzieTests.modulemap */,
-				820E607CFDF7E1BDCD77FF69009FA97F /* Pods-piczzieTests-acknowledgements.markdown */,
-				7A7A7CF71B3DE5BAC0CB65BDC120A5B1 /* Pods-piczzieTests-acknowledgements.plist */,
-				F9B7E48C4E6039C30DFD3AF507CDA17D /* Pods-piczzieTests-dummy.m */,
-				ED569B462D4BE7681F953DB1369525B7 /* Pods-piczzieTests-Info.plist */,
-				A89E314049A4852BE2FCC485060823A7 /* Pods-piczzieTests-umbrella.h */,
-				DDDF50EDB37E8FEA7E94C8A36C00AF43 /* Pods-piczzieTests.debug.xcconfig */,
-				4C887A650B7BD6F35183923717CB0E6F /* Pods-piczzieTests.release.xcconfig */,
+				832F4240090AEB9790F95E3D2B82BEBD /* iOS */,
 			);
-			name = "Pods-piczzieTests";
-			path = "Target Support Files/Pods-piczzieTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49D65BDC11B076663EB6B03D9F686921 /* Products */ = {
+		2B7F0AE0B91448B95A2B592428D91721 /* Pods-piczzie */ = {
+			isa = PBXGroup;
+			children = (
+				62DADB2A384885BF7ADCFEA5B860755E /* Pods-piczzie.modulemap */,
+				192C9A126E7BD80FF968001CDA93F87E /* Pods-piczzie-acknowledgements.markdown */,
+				53A937086A20F566BC649C7B2E54BDC9 /* Pods-piczzie-acknowledgements.plist */,
+				FF4CAB8065998BF046D7C1D3AB044503 /* Pods-piczzie-dummy.m */,
+				DF7482496FFC5CF8E9E4CE006A2305A8 /* Pods-piczzie-frameworks.sh */,
+				1B98FAC2C5E947EF140A6200083C4416 /* Pods-piczzie-Info.plist */,
+				6A5A8FD493DCCC9AE173B800FC26E3D1 /* Pods-piczzie-umbrella.h */,
+				F9DF1FB503822AF0EEC1CDF4949B052F /* Pods-piczzie.debug.xcconfig */,
+				3F9C4FF1FE48927C0673CC8FC340CD11 /* Pods-piczzie.release.xcconfig */,
+			);
+			name = "Pods-piczzie";
+			path = "Target Support Files/Pods-piczzie";
+			sourceTree = "<group>";
+		};
+		65528CF14E14D6AED246A79E3DFB8B9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				F4A4D9075045F7FF0620B6591836C688 /* Pods_piczzie.framework */,
 				69483EE516118CA6A28BB92B979A460C /* Pods_piczzie_piczzieUITests.framework */,
 				59B0A9816311589068CE28AE2D98A484 /* Pods_piczzieTests.framework */,
+				E3A0609525C5B681751F703B88451CB1 /* WaterfallGrid.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0C5A8B0D41AE9C23AA1E983CB6ACB36 /* Targets Support Files */ = {
+		6B9A8D4243AB27712BFF7B51E2FC3676 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF47263DE0E373CD58E3CB65E5196AD9 /* Pods-piczzie */,
-				B54AA6935AC678C5EC00660199D9E8A0 /* Pods-piczzie-piczzieUITests */,
-				409D6825D8970433B267154D0E85F154 /* Pods-piczzieTests */,
+				BE195BE891FB7F2A1783DE15C717A120 /* WaterfallGrid */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		832F4240090AEB9790F95E3D2B82BEBD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */,
+				80E2909F464F1E009B5A0483107219A1 /* SwiftUI.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8541CCB4A6EB1D1D40244AAA0A3E926F /* Pods-piczzieTests */ = {
+			isa = PBXGroup;
+			children = (
+				8283B1CF6495F519AB39D4CBED34A861 /* Pods-piczzieTests.modulemap */,
+				3E1EA682F7DE2B25FB01AD32AE06B9C1 /* Pods-piczzieTests-acknowledgements.markdown */,
+				4EAFAA38494F8ECDFAD62A61972845C8 /* Pods-piczzieTests-acknowledgements.plist */,
+				759E0FAAEAA30FE2E2310CC0BEE3F59B /* Pods-piczzieTests-dummy.m */,
+				7B75B0345BB6CA475AFD4C1F63C5CA23 /* Pods-piczzieTests-Info.plist */,
+				A2AC47A73366C9D242382707F75BCC0C /* Pods-piczzieTests-umbrella.h */,
+				C6C8CA2523D48AFBD7DCAEB99E97E9FD /* Pods-piczzieTests.debug.xcconfig */,
+				01A814601CE49A71DBA313F5B9C38268 /* Pods-piczzieTests.release.xcconfig */,
+			);
+			name = "Pods-piczzieTests";
+			path = "Target Support Files/Pods-piczzieTests";
+			sourceTree = "<group>";
+		};
+		91FED54689311B6BD19EA450732FED09 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F0AE0B91448B95A2B592428D91721 /* Pods-piczzie */,
+				9E177F2CD8AEFDC371FCCD69C7878C69 /* Pods-piczzie-piczzieUITests */,
+				8541CCB4A6EB1D1D40244AAA0A3E926F /* Pods-piczzieTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B54AA6935AC678C5EC00660199D9E8A0 /* Pods-piczzie-piczzieUITests */ = {
+		9E177F2CD8AEFDC371FCCD69C7878C69 /* Pods-piczzie-piczzieUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CA0E7E2F52AB78AB6ACE5F793A67B3E4 /* Pods-piczzie-piczzieUITests.modulemap */,
-				D4063648950F3B95C4277DD3534A3A08 /* Pods-piczzie-piczzieUITests-acknowledgements.markdown */,
-				5BF694EF8C0F898A055A0626764F1FB5 /* Pods-piczzie-piczzieUITests-acknowledgements.plist */,
-				2C266A6EA70380860F6DEA2020ED24D7 /* Pods-piczzie-piczzieUITests-dummy.m */,
-				3982E33D4B54F3F9C6343A184758C9D8 /* Pods-piczzie-piczzieUITests-Info.plist */,
-				5C7C492BC7C6CBD0EE343D3427A77424 /* Pods-piczzie-piczzieUITests-umbrella.h */,
-				E9DC2DE743E061F14CBE7D3C5B0F7C35 /* Pods-piczzie-piczzieUITests.debug.xcconfig */,
-				903DF5667A6C0E420E0DA25D1D5B0DD0 /* Pods-piczzie-piczzieUITests.release.xcconfig */,
+				F3CBE35B91AA4C3B2ED83291B8183BBD /* Pods-piczzie-piczzieUITests.modulemap */,
+				D6ED60FB5A7C02619A93BA1F8334FD1F /* Pods-piczzie-piczzieUITests-acknowledgements.markdown */,
+				CA69BBFC541E5C84C9E1D8E23C3CD47C /* Pods-piczzie-piczzieUITests-acknowledgements.plist */,
+				7BA06AC61A0A9385D4D96798FF0AEA43 /* Pods-piczzie-piczzieUITests-dummy.m */,
+				040CECD0EBDD3CA9074961F33AD640FE /* Pods-piczzie-piczzieUITests-frameworks.sh */,
+				2822701DB42AAB3BF5998D511C993EC6 /* Pods-piczzie-piczzieUITests-Info.plist */,
+				F9CD9B99C75430299BE047A07E1DB062 /* Pods-piczzie-piczzieUITests-umbrella.h */,
+				C10848A0E3A53E46015E668C1FB0EDFF /* Pods-piczzie-piczzieUITests.debug.xcconfig */,
+				641AD5CE8713B40C38BFEB0AEE7802D2 /* Pods-piczzie-piczzieUITests.release.xcconfig */,
 			);
 			name = "Pods-piczzie-piczzieUITests";
 			path = "Target Support Files/Pods-piczzie-piczzieUITests";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		BE195BE891FB7F2A1783DE15C717A120 /* WaterfallGrid */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				A395344761DF1D08861516507C05A436 /* ElementPreference.swift */,
+				AC6C8A270210D959E18D7AE4E167F30C /* GridSyle.swift */,
+				0EF4FD9C4EC76ACB06C11C0790282163 /* PositiveNumber.swift */,
+				FB536A30B10217BEF59539A5BBB8C936 /* PreferenceSetter.swift */,
+				A65F4888D797CB4971574A229372533D /* ScrollOptions.swift */,
+				E4A9BCB779F485261786BB6E25DA95FB /* View+GridStyle.swift */,
+				718E236AABB7A8B95B2FC5A45EB86C75 /* View+ScrollOptions.swift */,
+				5078AEA3B3AF000B09D1C89E9C8EC3B2 /* WaterfallGrid.swift */,
+				E24119818EC6009D704AFBC39302E360 /* Support Files */,
 			);
-			name = iOS;
+			name = WaterfallGrid;
+			path = WaterfallGrid;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				49D65BDC11B076663EB6B03D9F686921 /* Products */,
-				B0C5A8B0D41AE9C23AA1E983CB6ACB36 /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				6B9A8D4243AB27712BFF7B51E2FC3676 /* Pods */,
+				65528CF14E14D6AED246A79E3DFB8B9F /* Products */,
+				91FED54689311B6BD19EA450732FED09 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CF47263DE0E373CD58E3CB65E5196AD9 /* Pods-piczzie */ = {
+		E24119818EC6009D704AFBC39302E360 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FAF611210FFAE8EB66BD18621B8A3167 /* Pods-piczzie.modulemap */,
-				F3CDC685F4256A5939482530A9EFD8FB /* Pods-piczzie-acknowledgements.markdown */,
-				EB4D7FDC8B95353332959F10E1DD5175 /* Pods-piczzie-acknowledgements.plist */,
-				2F6BFDF6E66B96DFABD8FDD6FF823254 /* Pods-piczzie-dummy.m */,
-				7E519A3CE9A50F6EBC6D12E1505EE6D9 /* Pods-piczzie-Info.plist */,
-				F814027A0D1050A9180A4D9186AC67E5 /* Pods-piczzie-umbrella.h */,
-				3198A8A97AB0CFC89BD32B0106111C0F /* Pods-piczzie.debug.xcconfig */,
-				E13728D73D78E8A66C3EE3C221055DFA /* Pods-piczzie.release.xcconfig */,
+				421121A6A88DA597D0E85AB6AA4D2E49 /* WaterfallGrid.modulemap */,
+				CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */,
+				56F935C34C039022B45114A53A7D0E7C /* WaterfallGrid-dummy.m */,
+				CCDC666209803BEDEFE3DBA3101D11D9 /* WaterfallGrid-Info.plist */,
+				F5CCD495F3127A994A608C0192F54538 /* WaterfallGrid-prefix.pch */,
+				D527EBA41C9BDAC23E5EF6B7DA7E7B1F /* WaterfallGrid-umbrella.h */,
 			);
-			name = "Pods-piczzie";
-			path = "Target Support Files/Pods-piczzie";
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/WaterfallGrid";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,19 +290,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27C7CDF695414EC2AD3E47ED12BD9367 /* Headers */ = {
+		5A1ADEF50A1B4B9791217F45BFF07280 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6A9CA96AB59641A7FC441302A31CE4 /* Pods-piczzie-umbrella.h in Headers */,
+				BA1B2036DF92B8C921060CAB67986357 /* Pods-piczzie-piczzieUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A32E1CBCE7BC8519B98A846D33D3D4A /* Headers */ = {
+		7703D73ADDC74DBE043536A1CCC7E714 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60FA371516AC5F350D8A9B5D99FDC046 /* Pods-piczzie-piczzieUITests-umbrella.h in Headers */,
+				85509ACC182C25E0759CC512147CAA5A /* WaterfallGrid-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A571B2F03E87380FD8EC2A2CCB726C16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA86ECC2F43BA13BE0077FE3A3D70A39 /* Pods-piczzie-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,18 +336,37 @@
 			productReference = 59B0A9816311589068CE28AE2D98A484 /* Pods_piczzieTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7C61DFFA15B48A59F077CDAE4185D023 /* Pods-piczzie-piczzieUITests */ = {
+		16DB0A490A61C833A70BDE2217E0D5FD /* WaterfallGrid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F64D0A68A89DBB27BEC4E38F29C0151 /* Build configuration list for PBXNativeTarget "Pods-piczzie-piczzieUITests" */;
+			buildConfigurationList = B4D3FA81DA8B3CA5F0EDF3DB563015A3 /* Build configuration list for PBXNativeTarget "WaterfallGrid" */;
 			buildPhases = (
-				3A32E1CBCE7BC8519B98A846D33D3D4A /* Headers */,
-				555F06AA71AF20771D497E525589ACCF /* Sources */,
-				23CA91325C3B36B78562E3675FB1A613 /* Frameworks */,
-				CB2E447DF58798F249DFBF6001D2819D /* Resources */,
+				7703D73ADDC74DBE043536A1CCC7E714 /* Headers */,
+				32FA8DFEDEE5A356ACAA0E0953861FAC /* Sources */,
+				7AE8060489A8534B63545AC0E72AF66A /* Frameworks */,
+				BDA7E55F1AE232E431D594ADE07792B6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = WaterfallGrid;
+			productName = WaterfallGrid;
+			productReference = E3A0609525C5B681751F703B88451CB1 /* WaterfallGrid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C61DFFA15B48A59F077CDAE4185D023 /* Pods-piczzie-piczzieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545A1E75D6E9CFDB558BF312A9621817 /* Build configuration list for PBXNativeTarget "Pods-piczzie-piczzieUITests" */;
+			buildPhases = (
+				5A1ADEF50A1B4B9791217F45BFF07280 /* Headers */,
+				A41535651308EFB6B114DC5CE3C12A45 /* Sources */,
+				70DC18D6D29265F08887E63698CA61CB /* Frameworks */,
+				91C7A1C286821194BEEE57A6EEEDE316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4730D316683A03A9C75D9EF1AC90DA05 /* PBXTargetDependency */,
 			);
 			name = "Pods-piczzie-piczzieUITests";
 			productName = "Pods-piczzie-piczzieUITests";
@@ -251,16 +375,17 @@
 		};
 		883933E93819E955F831D9A843561D0A /* Pods-piczzie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 490E9E925E5FDD18789A2EBD3F15BFCF /* Build configuration list for PBXNativeTarget "Pods-piczzie" */;
+			buildConfigurationList = F56705DB256D5E4CA2478A82D62CE531 /* Build configuration list for PBXNativeTarget "Pods-piczzie" */;
 			buildPhases = (
-				27C7CDF695414EC2AD3E47ED12BD9367 /* Headers */,
-				B9A27FF4AFC55C7353A5770CD4EB2AA6 /* Sources */,
-				E0E76DD9D896FE5A4B2A8B01D6530373 /* Frameworks */,
-				0CBDA2D72CA05E8219398B2DF6878976 /* Resources */,
+				A571B2F03E87380FD8EC2A2CCB726C16 /* Headers */,
+				37A4C7A14050993E57AA001DC6C93E1C /* Sources */,
+				9491D43E13CC51651B512F5EDAE3F6AB /* Frameworks */,
+				867F1FBAF940D0B1ADF261AD5D2CA93A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				012960E2728A2C64DA47398CF8BC23A1 /* PBXTargetDependency */,
 			);
 			name = "Pods-piczzie";
 			productName = "Pods-piczzie";
@@ -285,25 +410,19 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 49D65BDC11B076663EB6B03D9F686921 /* Products */;
+			productRefGroup = 65528CF14E14D6AED246A79E3DFB8B9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				883933E93819E955F831D9A843561D0A /* Pods-piczzie */,
 				7C61DFFA15B48A59F077CDAE4185D023 /* Pods-piczzie-piczzieUITests */,
 				074916B4B52569C77B44D3785CB6086C /* Pods-piczzieTests */,
+				16DB0A490A61C833A70BDE2217E0D5FD /* WaterfallGrid */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0CBDA2D72CA05E8219398B2DF6878976 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		543902E623401AF9310E9161D30F2F86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,7 +430,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB2E447DF58798F249DFBF6001D2819D /* Resources */ = {
+		867F1FBAF940D0B1ADF261AD5D2CA93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C7A1C286821194BEEE57A6EEEDE316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA7E55F1AE232E431D594ADE07792B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +454,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		555F06AA71AF20771D497E525589ACCF /* Sources */ = {
+		32FA8DFEDEE5A356ACAA0E0953861FAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1641E053C4FA9332B744DB890A445A29 /* Pods-piczzie-piczzieUITests-dummy.m in Sources */,
+				DAC8A0D47F32186E426036C750172619 /* ElementPreference.swift in Sources */,
+				5B907EB7A97EBA7FAB28EA5C983AE062 /* GridSyle.swift in Sources */,
+				A38878E360CA83DAD2B858615823232F /* PositiveNumber.swift in Sources */,
+				25096B5658932384F66FE73CD783AFE3 /* PreferenceSetter.swift in Sources */,
+				65B51ABAB72E1BAB30E03D477EFAE80C /* ScrollOptions.swift in Sources */,
+				D61482C4C2E27C73CCD84ED2E6B3EE86 /* View+GridStyle.swift in Sources */,
+				7420D51AEFBEDC25148B04536E02345D /* View+ScrollOptions.swift in Sources */,
+				3FF881A38E8C4F2A9DF31BE23CF9C1B7 /* WaterfallGrid-dummy.m in Sources */,
+				402501A676EAC0C4D5D3D9078CDE0D04 /* WaterfallGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9A27FF4AFC55C7353A5770CD4EB2AA6 /* Sources */ = {
+		37A4C7A14050993E57AA001DC6C93E1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC65BD6593780CF59A48263C557DC879 /* Pods-piczzie-dummy.m in Sources */,
+				C0AE896DF5B853138A6F90CB10B2A924 /* Pods-piczzie-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41535651308EFB6B114DC5CE3C12A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CEA079729AA8D6F2C8150C517BCA0E /* Pods-piczzie-piczzieUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +497,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		012960E2728A2C64DA47398CF8BC23A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WaterfallGrid;
+			target = 16DB0A490A61C833A70BDE2217E0D5FD /* WaterfallGrid */;
+			targetProxy = 85CC6B2FAC67ED6861DD3589F04629CA /* PBXContainerItemProxy */;
+		};
+		4730D316683A03A9C75D9EF1AC90DA05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WaterfallGrid;
+			target = 16DB0A490A61C833A70BDE2217E0D5FD /* WaterfallGrid */;
+			targetProxy = 831A32CB36234DCE23560900E8409ECC /* PBXContainerItemProxy */;
+		};
 		966EDC7496699A87999E2D36F11B61C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-piczzie";
@@ -357,48 +518,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06DAEB55C1B5748B43C3797671E1E08D /* Release */ = {
+		512B8B00CE2A9CD7D03D7DBBA9C68843 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E13728D73D78E8A66C3EE3C221055DFA /* Pods-piczzie.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-piczzie/Pods-piczzie-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-piczzie/Pods-piczzie.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1135993457BC8AE2F93D2B583A4F1A39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3198A8A97AB0CFC89BD32B0106111C0F /* Pods-piczzie.debug.xcconfig */;
+			baseConfigurationReference = F9DF1FB503822AF0EEC1CDF4949B052F /* Pods-piczzie.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -434,9 +556,9 @@
 			};
 			name = Debug;
 		};
-		2FEC584D54FCEAD024A0EFB1AD1E1706 /* Release */ = {
+		52D362D404B46E9AA024286D968F01EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 903DF5667A6C0E420E0DA25D1D5B0DD0 /* Pods-piczzie-piczzieUITests.release.xcconfig */;
+			baseConfigurationReference = 641AD5CE8713B40C38BFEB0AEE7802D2 /* Pods-piczzie-piczzieUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -599,7 +721,7 @@
 		};
 		8290F8256AE4EA84E93822A766EAA581 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDDF50EDB37E8FEA7E94C8A36C00AF43 /* Pods-piczzieTests.debug.xcconfig */;
+			baseConfigurationReference = C6C8CA2523D48AFBD7DCAEB99E97E9FD /* Pods-piczzieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -635,9 +757,45 @@
 			};
 			name = Debug;
 		};
+		8FA7FDFDF0DF87E7ED9B34F4FA508889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterfallGrid/WaterfallGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid.modulemap";
+				PRODUCT_MODULE_NAME = WaterfallGrid;
+				PRODUCT_NAME = WaterfallGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D648135579CD179CA596F4E6A4403EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C887A650B7BD6F35183923717CB0E6F /* Pods-piczzieTests.release.xcconfig */;
+			baseConfigurationReference = 01A814601CE49A71DBA313F5B9C38268 /* Pods-piczzieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -674,9 +832,48 @@
 			};
 			name = Release;
 		};
-		ED060836CCD36D0521BDF4AF2C5CB657 /* Debug */ = {
+		DD649F1BFA6C06707A5ED30EEADEA904 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DC2DE743E061F14CBE7D3C5B0F7C35 /* Pods-piczzie-piczzieUITests.debug.xcconfig */;
+			baseConfigurationReference = 3F9C4FF1FE48927C0673CC8FC340CD11 /* Pods-piczzie.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-piczzie/Pods-piczzie-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-piczzie/Pods-piczzie.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2DAD83AD14CE4F5CEDFF1E4962F64B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10848A0E3A53E46015E668C1FB0EDFF /* Pods-piczzie-piczzieUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -712,6 +909,43 @@
 			};
 			name = Debug;
 		};
+		F946344929C57A3488DBE63CE1AC7B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterfallGrid/WaterfallGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid.modulemap";
+				PRODUCT_MODULE_NAME = WaterfallGrid;
+				PRODUCT_NAME = WaterfallGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -724,11 +958,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		490E9E925E5FDD18789A2EBD3F15BFCF /* Build configuration list for PBXNativeTarget "Pods-piczzie" */ = {
+		545A1E75D6E9CFDB558BF312A9621817 /* Build configuration list for PBXNativeTarget "Pods-piczzie-piczzieUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1135993457BC8AE2F93D2B583A4F1A39 /* Debug */,
-				06DAEB55C1B5748B43C3797671E1E08D /* Release */,
+				E2DAD83AD14CE4F5CEDFF1E4962F64B8 /* Debug */,
+				52D362D404B46E9AA024286D968F01EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -742,11 +976,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F64D0A68A89DBB27BEC4E38F29C0151 /* Build configuration list for PBXNativeTarget "Pods-piczzie-piczzieUITests" */ = {
+		B4D3FA81DA8B3CA5F0EDF3DB563015A3 /* Build configuration list for PBXNativeTarget "WaterfallGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED060836CCD36D0521BDF4AF2C5CB657 /* Debug */,
-				2FEC584D54FCEAD024A0EFB1AD1E1706 /* Release */,
+				8FA7FDFDF0DF87E7ED9B34F4FA508889 /* Debug */,
+				F946344929C57A3488DBE63CE1AC7B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56705DB256D5E4CA2478A82D62CE531 /* Build configuration list for PBXNativeTarget "Pods-piczzie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512B8B00CE2A9CD7D03D7DBBA9C68843 /* Debug */,
+				DD649F1BFA6C06707A5ED30EEADEA904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
