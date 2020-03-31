@@ -27,6 +27,9 @@
 		E92D737D2433AA3D00EF22A8 /* GiftRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D737A2433AA3D00EF22A8 /* GiftRouter.swift */; };
 		E92D737E2433AA3D00EF22A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D737B2433AA3D00EF22A8 /* Router.swift */; };
 		E92D737F2433AA3D00EF22A8 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D737C2433AA3D00EF22A8 /* UserRouter.swift */; };
+		E92D73832433AA8800EF22A8 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73812433AA8800EF22A8 /* Gift.swift */; };
+		E92D73842433AA8800EF22A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73822433AA8800EF22A8 /* User.swift */; };
+		E92D73862433AA9E00EF22A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D73852433AA9E00EF22A8 /* Colors.xcassets */; };
 		E947D0D52433A20F005DCF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D42433A20F005DCF90 /* AppDelegate.swift */; };
 		E947D0D72433A20F005DCF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D62433A20F005DCF90 /* SceneDelegate.swift */; };
 		E947D0D92433A20F005DCF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D82433A20F005DCF90 /* ContentView.swift */; };
@@ -75,6 +78,9 @@
 		E92D737A2433AA3D00EF22A8 /* GiftRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftRouter.swift; sourceTree = "<group>"; };
 		E92D737B2433AA3D00EF22A8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E92D737C2433AA3D00EF22A8 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		E92D73812433AA8800EF22A8 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		E92D73822433AA8800EF22A8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E92D73852433AA9E00EF22A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E947D0D12433A20F005DCF90 /* piczzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piczzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E947D0D42433A20F005DCF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E947D0D62433A20F005DCF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +219,15 @@
 			path = repository;
 			sourceTree = "<group>";
 		};
+		E92D73802433AA7B00EF22A8 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E92D73812433AA8800EF22A8 /* Gift.swift */,
+				E92D73822433AA8800EF22A8 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		E947D0C82433A20F005DCF90 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +251,7 @@
 		E947D0D32433A20F005DCF90 /* piczzie */ = {
 			isa = PBXGroup;
 			children = (
+				E92D73802433AA7B00EF22A8 /* models */,
 				E92D735F2433A89E00EF22A8 /* network_services */,
 				E92D73512433A71000EF22A8 /* feature */,
 				E92D73452433A4A700EF22A8 /* utils */,
@@ -243,6 +259,7 @@
 				E947D0D62433A20F005DCF90 /* SceneDelegate.swift */,
 				E947D0D82433A20F005DCF90 /* ContentView.swift */,
 				E947D0DA2433A216005DCF90 /* Assets.xcassets */,
+				E92D73852433AA9E00EF22A8 /* Colors.xcassets */,
 				E947D0DF2433A216005DCF90 /* LaunchScreen.storyboard */,
 				E947D0E22433A216005DCF90 /* Info.plist */,
 				E947D0DC2433A216005DCF90 /* Preview Content */,
@@ -381,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E947D0E12433A216005DCF90 /* LaunchScreen.storyboard in Resources */,
+				E92D73862433AA9E00EF22A8 /* Colors.xcassets in Resources */,
 				E947D0DE2433A216005DCF90 /* Preview Assets.xcassets in Resources */,
 				E947D0DB2433A216005DCF90 /* Assets.xcassets in Resources */,
 			);
@@ -410,6 +428,7 @@
 				E92D737E2433AA3D00EF22A8 /* Router.swift in Sources */,
 				E92D736E2433A95500EF22A8 /* GiftRepository.swift in Sources */,
 				E92D73762433A96300EF22A8 /* ErrorNetwork.swift in Sources */,
+				E92D73842433AA8800EF22A8 /* User.swift in Sources */,
 				E92D734E2433A5E800EF22A8 /* ImageCacheKey.swift in Sources */,
 				E92D736F2433A95500EF22A8 /* UserRepository.swift in Sources */,
 				E92D73792433A96300EF22A8 /* HandleErrorNetwork.swift in Sources */,
@@ -422,6 +441,7 @@
 				E92D737F2433AA3D00EF22A8 /* UserRouter.swift in Sources */,
 				E92D734C2433A5E800EF22A8 /* ImageLoader.swift in Sources */,
 				E92D73772433A96300EF22A8 /* ServiceLayer.swift in Sources */,
+				E92D73832433AA8800EF22A8 /* Gift.swift in Sources */,
 				E92D73572433A77C00EF22A8 /* ProfilView.swift in Sources */,
 				E92D73782433A96300EF22A8 /* Request.swift in Sources */,
 				E947D0D92433A20F005DCF90 /* ContentView.swift in Sources */,
