@@ -32,7 +32,7 @@
 		E92D73832433AA8800EF22A8 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73812433AA8800EF22A8 /* Gift.swift */; };
 		E92D73842433AA8800EF22A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73822433AA8800EF22A8 /* User.swift */; };
 		E92D73862433AA9E00EF22A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D73852433AA9E00EF22A8 /* Colors.xcassets */; };
-		E92D73882433AAF400EF22A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92D73872433AAF400EF22A8 /* Localizable.strings */; };
+		E92D738A2433AC0800EF22A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92D73892433AC0800EF22A8 /* Localizable.strings */; };
 		E947D0D52433A20F005DCF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D42433A20F005DCF90 /* AppDelegate.swift */; };
 		E947D0D72433A20F005DCF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D62433A20F005DCF90 /* SceneDelegate.swift */; };
 		E947D0D92433A20F005DCF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0D82433A20F005DCF90 /* ContentView.swift */; };
@@ -92,7 +92,7 @@
 		E92D73812433AA8800EF22A8 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		E92D73822433AA8800EF22A8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E92D73852433AA9E00EF22A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		E92D73872433AAF400EF22A8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
+		E92D73892433AC0800EF22A8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E947D0D12433A20F005DCF90 /* piczzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piczzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E947D0D42433A20F005DCF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E947D0D62433A20F005DCF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +149,6 @@
 				4D08B589B6F88DD561849DD3 /* Pods-piczzieTests.debug.xcconfig */,
 				7A221D89CAC15D800A14A1EA /* Pods-piczzieTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -299,7 +298,6 @@
 				E92D73512433A71000EF22A8 /* feature */,
 				E92D73452433A4A700EF22A8 /* utils */,
 				E947D0D42433A20F005DCF90 /* AppDelegate.swift */,
-				E92D73872433AAF400EF22A8 /* Localizable.strings */,
 				E947D0D62433A20F005DCF90 /* SceneDelegate.swift */,
 				E947D0D82433A20F005DCF90 /* ContentView.swift */,
 				E947D0DA2433A216005DCF90 /* Assets.xcassets */,
@@ -307,6 +305,7 @@
 				E947D0DF2433A216005DCF90 /* LaunchScreen.storyboard */,
 				E947D0E22433A216005DCF90 /* Info.plist */,
 				E947D0DC2433A216005DCF90 /* Preview Content */,
+				E92D73892433AC0800EF22A8 /* Localizable.strings */,
 			);
 			path = piczzie;
 			sourceTree = "<group>";
@@ -444,7 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92D73882433AAF400EF22A8 /* Localizable.strings in Resources */,
+				E92D738A2433AC0800EF22A8 /* Localizable.strings in Resources */,
 				E947D0E12433A216005DCF90 /* LaunchScreen.storyboard in Resources */,
 				E92D73862433AA9E00EF22A8 /* Colors.xcassets in Resources */,
 				E947D0DE2433A216005DCF90 /* Preview Assets.xcassets in Resources */,
