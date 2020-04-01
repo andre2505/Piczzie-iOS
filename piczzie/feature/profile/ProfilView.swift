@@ -8,82 +8,86 @@
 
 import SwiftUI
 import WaterfallGrid
+import SDWebImageSwiftUI
 
 struct ProfilView: View {
     
-    @Environment(\.imageCache) var cache: ImageCache
-    
     @ObservedObject var profilVM = ProfilViewModel()
     
-    init() {
-
-        UINavigationBar.appearance().backgroundColor = UIColor(named: "primaryColor")
-
-         UINavigationBar.appearance().largeTitleTextAttributes = [
-            .foregroundColor: UIColor.white,
-                   .font : UIFont(name:"Helvetica Neue", size: 40)!]
-    }
-    
+    @State var favoriteIsSelected : Bool = true
     
     var body: some View {
-    NavigationView {
-        VStack(spacing:0) {
-          VStack {
-                //IMAGE
-                AsyncImage(
-                    url: URL(string: "http://192.168.1.51:8080/\(String(describing: getUser()?.photo! ?? ""))")!,
-                     placeholder: Text("Loading ..."), cache: self.cache
-                ).aspectRatio(contentMode: .fit)
-                 .clipShape(Circle())
-                 .shadow(radius: 10)
+        NavigationView {
+            VStack(spacing:0) {
+                VStack {
+                    //IMAGE
+                    WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
+                        .resizable()
+                        .placeholder  {
+                            Rectangle().foregroundColor(Color.gray)
+                    }
+                    .clipShape(Circle())
+                    .shadow(radius: 10)
                     .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     .frame(width: 100, height: 100)
-            
-                Text("profil")
-         }.padding()
-            .frame(maxWidth: .infinity, alignment: .center)
-            .background(Color("colorGrey10"))
-            Divider().frame(height: 0.5).background(Color("colorGrey10"))
-            HStack {
-                Button(action: {
+                    .scaledToFit()
                     
-                                      
-                }) {
-                   Image("cloud.heavyrain.fill")
-                    .renderingMode(Image.TemplateRenderingMode?.init(Image.TemplateRenderingMode.original))
-                    .frame(maxWidth: .infinity)
-                }
-               
-                Button(action: {
-                                 
-                                                   
-                }) {
-                    Image("cloud.heavyrain.fill")
-                    .renderingMode(Image.TemplateRenderingMode?.init(Image.TemplateRenderingMode.original))
-                    .frame(maxWidth: .infinity)
-                }
-                
-            }.padding(18)
-                .frame(maxWidth: .infinity, alignment: .center)
-            Divider().frame(height: 0.5).background(Color("colorGrey10"))
-            
-            VStack {
-    
-                WaterfallGrid(profilVM) { (gift: Gift) in
-                
-
-             AsyncImage(url: URL(string: "http://192.168.1.51:8080/\(String(describing: getUser()?.photo! ?? ""))")!,
-             placeholder: Text("Loading ..."), cache: self.cache
-             ).aspectRatio(contentMode: .fit).onAppear {
-                self.profilVM.loadMore(currentItem: gift)
+                    Text("profil")
+                }.padding()
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .background(Color("colorGrey10"))
+                Divider().frame(height: 0.5).background(Color("colorGrey10"))
+                HStack {
+                    Button(action: {
+                        
+                        self.favoriteIsSelected = false
+                    }) {
+                        (favoriteIsSelected) ? Image("FavoriteSelected")
+                            .foregroundColor(Color.red)
+                            .frame(maxWidth: .infinity) :  Image("FavoriteNotSelected")
+                                .foregroundColor(Color.gray)
+                                .frame(maxWidth: .infinity)
                     }
-                }.gridStyle(columns: 3)
+                    
+                    Button(action: {
+                        self.favoriteIsSelected = true
+                        
+                    }) {
+                        
+                        (favoriteIsSelected) ? Image("FavoriteSelected")
+                        .foregroundColor(Color.red)
+                        .frame(maxWidth: .infinity) :  Image("FavoriteNotSelected")
+                            .foregroundColor(Color.gray)
+                            .frame(maxWidth: .infinity)
+                    }
+                    
+                }.padding(18)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .background(Color.white)
+                
+                Divider().frame(height: 0.5).background(Color("colorGrey10"))
+                
+                VStack {
+                    
+                    WaterfallGrid(profilVM) { (gift: Gift) in
+                        
+                        WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
+                            .resizable()
+                            .placeholder  {
+                                Rectangle().foregroundColor(Color.gray)
+                        }
+                        .scaledToFit()
+                        .onAppear {
+                            self.profilVM.loadMore(currentItem: gift)
+                        }
+                    }.gridStyle(columns: 3)
                 }
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
-                .background(Color.gray)
+                .background(Color.white)
+                .navigationBarTitle("profil", displayMode: .inline)
+            
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
             .background(Color.white)
-        .navigationBarTitle("Profil", displayMode: .inline)
     }
 }
 

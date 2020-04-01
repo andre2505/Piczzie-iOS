@@ -12,23 +12,33 @@ struct MainView: View {
     
     init() {
         UITabBar.appearance().barTintColor = UIColor.white
+        
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithOpaqueBackground()
+        coloredAppearance.backgroundColor = UIColor(named: "primaryColor")
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        
     }
     
     var body: some View {
         ZStack {
             Color("primaryColor").edgesIgnoringSafeArea(.top)
             Color.white.edgesIgnoringSafeArea(.bottom)
-        TabView {
-            
-            LoginView().tabItem {
-               Image(systemName: "tv.fill")
-            }
-            
-            ProfilView().tabItem {
-                Image(systemName: "phone.fill")
-            }
-        }.accentColor(Color("primaryColor"))
-      }
+            TabView {
+                
+                LoginView().tabItem {
+                    Image(systemName: "tv.fill")
+                }
+                
+                ProfilView().tabItem {
+                    Image(systemName: "phone.fill")
+                }
+            }.accentColor(Color("primaryColor"))
+        }
     }
 }
 

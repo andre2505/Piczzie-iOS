@@ -1,4 +1,4 @@
-framework module Pods_piczzie {
+module Pods_piczzie {
   umbrella header "Pods-piczzie-umbrella.h"
 
   export *

@@ -1,4 +1,4 @@
-framework module Pods_piczzie_piczzieUITests {
+module Pods_piczzie_piczzieUITests {
   umbrella header "Pods-piczzie-piczzieUITests-umbrella.h"
 
   export *

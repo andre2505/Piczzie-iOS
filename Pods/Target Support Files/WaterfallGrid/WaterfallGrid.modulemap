@@ -1,4 +1,4 @@
-framework module WaterfallGrid {
+module WaterfallGrid {
   umbrella header "WaterfallGrid-umbrella.h"
 
   export *

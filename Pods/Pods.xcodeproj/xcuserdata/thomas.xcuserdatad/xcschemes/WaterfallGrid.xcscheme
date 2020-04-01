@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "16DB0A490A61C833A70BDE2217E0D5FD"
-               BuildableName = "WaterfallGrid.framework"
+               BuildableName = "libWaterfallGrid.a"
                BlueprintName = "WaterfallGrid"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
