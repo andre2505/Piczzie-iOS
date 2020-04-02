@@ -14,8 +14,15 @@ struct ProfilView: View {
     
     @ObservedObject var profilVM = ProfilViewModel()
     
-    @State var favoriteIsSelected : Bool = true
+    @State var giftIsSelected : Bool = true
+    @State var isActive: Bool = false
+    let login = NSNotification.Name("login")
     
+    init() {
+        UIButton.appearance().adjustsImageWhenHighlighted = false
+        
+        
+    }
     var body: some View {
         NavigationView {
             VStack(spacing:0) {
@@ -39,53 +46,52 @@ struct ProfilView: View {
                 Divider().frame(height: 0.5).background(Color("colorGrey10"))
                 HStack {
                     Button(action: {
-                        
-                        self.favoriteIsSelected = false
+                        /*let swiftUI = LoginView()
+                         UIApplication.shared.keyWindow!.rootViewController = UIHostingController(rootView: swiftUI)*/
+                        self.giftIsSelected = true
                     }) {
-                        (favoriteIsSelected) ? Image("FavoriteSelected")
-                            .foregroundColor(Color.red)
-                            .frame(maxWidth: .infinity) :  Image("FavoriteNotSelected")
+                        (self.giftIsSelected) ? Image("GiftSelected")
+                            .foregroundColor(Color("colorPink"))
+                            .frame(maxWidth: .infinity) :  Image("GiftUnselected")
                                 .foregroundColor(Color.gray)
                                 .frame(maxWidth: .infinity)
                     }
                     
                     Button(action: {
-                        self.favoriteIsSelected = true
-                        
+                        self.giftIsSelected = false
                     }) {
                         
-                        (favoriteIsSelected) ? Image("FavoriteSelected")
-                        .foregroundColor(Color.red)
-                        .frame(maxWidth: .infinity) :  Image("FavoriteNotSelected")
+                        (self.giftIsSelected) ? Image("FavoriteNotSelected")
                             .foregroundColor(Color.gray)
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity) :  Image("FavoriteSelected")
+                                .foregroundColor(Color("colorPink"))
+                                .frame(maxWidth: .infinity)
                     }
                     
-                }.padding(18)
+                }.padding(14)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .background(Color.white)
                 
                 Divider().frame(height: 0.5).background(Color("colorGrey10"))
                 
                 VStack {
-                    
                     WaterfallGrid(profilVM) { (gift: Gift) in
-                        
-                        WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
-                            .resizable()
-                            .placeholder  {
-                                Rectangle().foregroundColor(Color.gray)
-                        }
-                        .scaledToFit()
-                        .onAppear {
-                            self.profilVM.loadMore(currentItem: gift)
-                        }
+                        NavigationLink(destination: FriendsView()) {
+                            WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
+                                .resizable()
+                                .placeholder  {
+                                    Rectangle().foregroundColor(Color.gray)
+                            }
+                            .scaledToFit()
+                            .onAppear {
+                                self.profilVM.loadMore(currentItem: gift)
+                            }
+                        }.buttonStyle(PlainButtonStyle())
                     }.gridStyle(columns: 3)
+                        .navigationBarTitle("profil", displayMode: .inline)
                 }
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
                 .background(Color.white)
-                .navigationBarTitle("profil", displayMode: .inline)
-            
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
             .background(Color.white)
     }
@@ -98,3 +104,4 @@ struct ProfilView_Previews: PreviewProvider {
     }
     
 }
+

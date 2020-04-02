@@ -70,6 +70,7 @@ struct LoginView: View {
                             .stroke(primaryColor, lineWidth: 1)
                             
                         ).background(RoundedRectangle(cornerRadius: 40).fill(primaryColor))
+            
                     }
                     
                     Text(loginVM.user.email!)
@@ -82,8 +83,7 @@ struct LoginView: View {
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
                 .background(Color.white)
                 .navigationBarHidden(true)
-                .navigationBarTitle(Text("sdf"))
-                
+                .navigationBarTitle(Text(""))
             }
         }
     }
