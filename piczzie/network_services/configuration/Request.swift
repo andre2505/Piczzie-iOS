@@ -60,7 +60,7 @@ func post<T:Codable>(url: Router, path: [String: Any]?, body: T, session: URLSes
 }
 
 
-func getRequestConfiguration(router: Router, path: [String: Any]?, queryParameter: [URLQueryItem]?)  throws -> URLRequest {
+func getRequestConfiguration(router: Router, path: [String: Any]? = nil, queryParameter: [URLQueryItem]? = nil)  throws -> URLRequest {
     let headers = [
          "Content-Type": "application/json",
          "Accept": "application/json",
@@ -91,7 +91,7 @@ func getRequestConfiguration(router: Router, path: [String: Any]?, queryParamete
      return request
 }
 
-func get(url: Router, path: [String: Any]?, queryParameter: [URLQueryItem]?, session: URLSession = URLSession.shared) throws -> URLSession.DataTaskPublisher {
+func get(url: Router, path: [String: Any]? = nil, queryParameter: [URLQueryItem]? = nil, session: URLSession = URLSession.shared) throws -> URLSession.DataTaskPublisher {
     let request = try getRequestConfiguration(router: url, path: path, queryParameter: queryParameter)
     return session.dataTaskPublisher(for: request)
 }

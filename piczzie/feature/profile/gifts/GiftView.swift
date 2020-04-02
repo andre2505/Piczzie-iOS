@@ -7,29 +7,33 @@
 //
 
 import SwiftUI
-import WaterfallGrid
 import SDWebImageSwiftUI
+import QGrid
 
 struct GiftView: View {
     
     @ObservedObject var giftVM = GiftViewModel()
     
     var body: some View {
-        VStack {
-            WaterfallGrid(giftVM) { (gift: Gift) in
-                NavigationLink(destination: FriendsView()) {
-                    WebImage(url: URL(string: gift.image ?? ""))
-                        .resizable()
-                        .placeholder  {
-                            Rectangle().foregroundColor(Color.gray)
-                    }
-                    .scaledToFit()
-                    .onAppear {
-                        self.giftVM.loadMore(currentItem: gift)
-                    }
-                }.buttonStyle(PlainButtonStyle())
-            }.gridStyle(columns: 3, spacing: 1)
-                .navigationBarTitle("profil", displayMode: .inline)
+        VStack(alignment: .leading) {
+            QGrid(giftVM,
+                  columns: 3,
+                  vSpacing: 1,
+                  hSpacing: 1,
+                  vPadding: 0,
+                  hPadding: 0) { (gift: Gift) in
+                    NavigationLink(destination: FriendsView()) {
+                        WebImage(url: URL(string: gift.image ?? ""))
+                            .resizable()
+                            .placeholder  {
+                                Rectangle().foregroundColor(Color.gray)
+                        }
+                        .scaledToFit()
+                        .onAppear {
+                            self.giftVM.loadMore(currentItem: gift)
+                        }
+                    }.buttonStyle(PlainButtonStyle())
+            }.navigationBarTitle("profil", displayMode: .inline)
         }.background(Color.white)
     }
 }

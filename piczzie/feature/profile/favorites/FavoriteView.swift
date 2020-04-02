@@ -7,8 +7,8 @@
 //
 
 import SwiftUI
-import WaterfallGrid
 import SDWebImageSwiftUI
+import QGrid
 
 struct FavoriteView: View {
     
@@ -16,20 +16,24 @@ struct FavoriteView: View {
     
     var body: some View {
         VStack {
-            WaterfallGrid(favoriteVM) { (gift: Gift) in
-                NavigationLink(destination: FriendsView()) {
-                    WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
-                        .resizable()
-                        .placeholder  {
-                            Rectangle().foregroundColor(Color.gray)
-                    }
-                    .scaledToFit()
-                    .onAppear {
-                        self.favoriteVM.loadMore(currentItem: gift)
-                    }
-                }.buttonStyle(PlainButtonStyle())
-            }.gridStyle(columns: 3, spacing: 1)
-                .navigationBarTitle("profil", displayMode: .inline)
+            QGrid(favoriteVM,
+                  columns: 3,
+                  vSpacing: 1,
+                  hSpacing: 1,
+                  vPadding: 0,
+                  hPadding: 0) { (gift: Gift) in
+                    NavigationLink(destination: FriendsView()) {
+                        WebImage(url: URL(string: gift.image ?? ""))
+                            .resizable()
+                            .placeholder  {
+                                Rectangle().foregroundColor(Color.gray)
+                        }
+                        .scaledToFit()
+                        /*.onAppear {
+                         self.favoriteVM.loadMore(currentItem: gift)
+                         }*/
+                    }.buttonStyle(PlainButtonStyle())
+            }.navigationBarTitle("profil", displayMode: .inline)
         }.background(Color.white)
     }
 }

@@ -18,6 +18,8 @@ struct ProfilView: View {
     
     var giftView = GiftView()
     
+    var favoriteView = FavoriteView()
+    
     var body: some View {
         NavigationView {
             VStack(spacing:0) {
@@ -72,7 +74,7 @@ struct ProfilView: View {
                 if(self.giftIsSelected) {
                     getGiftView()
                 } else {
-                    LoginView()
+                   getFavoriteView()
                 }
                
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
@@ -83,6 +85,10 @@ struct ProfilView: View {
     
     private func getGiftView() -> GiftView {
         return giftView
+    }
+    
+    private func getFavoriteView() -> FavoriteView {
+        return favoriteView
     }
 }
 

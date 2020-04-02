@@ -27,13 +27,13 @@ class FavoriteViewModel : ObservableObject, RandomAccessCollection {
     }
     
     init() {
-        getFavoriteGifts(userId: getUser()?.id, offset: 0)
+        getFavoriteGifts()
     }
     
     
-    func getFavoriteGifts(userId: String?,offset:Int, currentItem:Gift? = nil){
+    func getFavoriteGifts(){
         
-        GiftRepository.getUserGift(id: userId ?? "", offset: offset)
+        GiftRepository.getFavoriteUserGift()
         .receive(on: DispatchQueue.main)
                  .sink(receiveCompletion: { (completion) in
                  switch completion {
@@ -58,7 +58,7 @@ class FavoriteViewModel : ObservableObject, RandomAccessCollection {
         
         currentLoading = true
         
-        getFavoriteGifts(userId: getUser()?.id, offset: endIndex)
+        getFavoriteGifts()
     }
     
     func shouldLoadMoreGifts(currentItem:Gift?) -> Bool {

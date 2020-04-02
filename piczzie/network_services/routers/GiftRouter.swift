@@ -12,11 +12,14 @@ enum GiftRouter : Router {
    
     //GET method
     case getGiftUser(userId: String)
+    case getFavoriteGiftUser
     
     var path: String {
       switch self {
       case .getGiftUser:
         return "/api/gift/user/{id}"
+      case .getFavoriteGiftUser:
+        return "/api/gift/reservation"
       }
     }
 }
