@@ -10,8 +10,11 @@ import SwiftUI
 
 struct MainView: View {
     
+    @State private var currentTab: Int = 0
+    private var profilView: ProfilView = ProfilView()
     init() {
-        UITabBar.appearance().barTintColor = UIColor.white
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .blue
         
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()
@@ -23,7 +26,6 @@ struct MainView: View {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = UIColor.white
-       
         
     }
     
@@ -31,17 +33,35 @@ struct MainView: View {
         ZStack {
             Color("primaryColor").edgesIgnoringSafeArea(.top)
             Color.white.edgesIgnoringSafeArea(.bottom)
-            TabView {
+            TabView(selection : $currentTab) {
                 
                 LoginView().tabItem {
-                    Image(systemName: "tv.fill")
-                }
+                    Image((currentTab == 0) ? "home.selected" : "home.unselected")
+                }.tag(0)
                 
-                ProfilView().tabItem {
-                    Image(systemName: "phone.fill")
-                }
+                FriendsView().tabItem {
+                   Image((currentTab == 1) ? "add.image.selected" : "add.image.unselected")
+                }.tag(1)
+                
+                FriendsView().tabItem {
+                   Image((currentTab == 2) ? "search.selected" : "search.unselected")
+                }.tag(2)
+                
+                NavigationView {
+                    getprofilView()
+                        .navigationBarHidden(true)
+                        .navigationBarTitle(Text(""))
+                    
+                }.tabItem {
+                    Image((currentTab == 3) ? "profil.selected" : "profil.unselected")
+                }.tag(3)
+                
             }.accentColor(Color("primaryColor"))
         }
+    }
+    
+    private func getprofilView() -> ProfilView {
+        return profilView
     }
 }
 

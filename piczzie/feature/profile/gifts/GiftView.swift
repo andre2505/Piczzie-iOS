@@ -14,6 +14,7 @@ struct GiftView: View {
     
     @ObservedObject var giftVM = GiftViewModel()
     
+
     var body: some View {
         VStack(alignment: .leading) {
             QGrid(giftVM,
@@ -33,7 +34,7 @@ struct GiftView: View {
                             self.giftVM.loadMore(currentItem: gift)
                         }
                     }.buttonStyle(PlainButtonStyle())
-            }.navigationBarTitle("profil", displayMode: .inline)
+                }.navigationBarTitle("profil", displayMode: .inline)
         }.background(Color.white)
     }
 }

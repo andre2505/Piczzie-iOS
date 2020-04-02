@@ -47,8 +47,8 @@ class GiftViewModel : ObservableObject, RandomAccessCollection {
              }, receiveValue: { gift in
                 self.giftList.append(contentsOf: gift)
                 self.currentLoading = false
-                print(self.giftList.count)
              })
+            
         .store(in: &disposables)
     }
     

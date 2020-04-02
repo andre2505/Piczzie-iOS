@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import WaterfallGrid
 import SDWebImageSwiftUI
 
 struct ProfilView: View {
@@ -19,7 +18,7 @@ struct ProfilView: View {
     var giftView = GiftView()
     
     var favoriteView = FavoriteView()
-    
+ 
     var body: some View {
         NavigationView {
             VStack(spacing:0) {
@@ -74,9 +73,9 @@ struct ProfilView: View {
                 if(self.giftIsSelected) {
                     getGiftView()
                 } else {
-                   getFavoriteView()
+                    getFavoriteView()
                 }
-               
+                
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
                 .background(Color.white)
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)

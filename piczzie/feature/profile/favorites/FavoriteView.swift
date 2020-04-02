@@ -19,20 +19,18 @@ struct FavoriteView: View {
             QGrid(favoriteVM,
                   columns: 3,
                   vSpacing: 1,
-                  hSpacing: 1,
-                  vPadding: 0,
-                  hPadding: 0) { (gift: Gift) in
-                    NavigationLink(destination: FriendsView()) {
-                        WebImage(url: URL(string: gift.image ?? ""))
-                            .resizable()
-                            .placeholder  {
-                                Rectangle().foregroundColor(Color.gray)
-                        }
-                        .scaledToFit()
-                        /*.onAppear {
-                         self.favoriteVM.loadMore(currentItem: gift)
-                         }*/
-                    }.buttonStyle(PlainButtonStyle())
+                  hSpacing: 1, vPadding: 0, hPadding: 0) { (gift: Gift) in
+                NavigationLink(destination: FriendsView()) {
+                    WebImage(url: URL(string: gift.image ?? ""))
+                        .resizable()
+                        .placeholder  {
+                            Rectangle().foregroundColor(Color.gray)
+                    }
+                    .scaledToFit()
+                    /*.onAppear {
+                     self.favoriteVM.loadMore(currentItem: gift)
+                     }*/
+                }.buttonStyle(PlainButtonStyle())
             }.navigationBarTitle("profil", displayMode: .inline)
         }.background(Color.white)
     }
