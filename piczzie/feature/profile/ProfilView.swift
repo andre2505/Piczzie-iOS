@@ -74,22 +74,8 @@ struct ProfilView: View {
                 
                 Divider().frame(height: 0.5).background(Color("colorGrey10"))
                 
-                VStack {
-                    WaterfallGrid(profilVM) { (gift: Gift) in
-                        NavigationLink(destination: FriendsView()) {
-                            WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
-                                .resizable()
-                                .placeholder  {
-                                    Rectangle().foregroundColor(Color.gray)
-                            }
-                            .scaledToFit()
-                            .onAppear {
-                                self.profilVM.loadMore(currentItem: gift)
-                            }
-                        }.buttonStyle(PlainButtonStyle())
-                    }.gridStyle(columns: 3)
-                        .navigationBarTitle("profil", displayMode: .inline)
-                }
+                GiftView()
+                
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
                 .background(Color.white)
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
