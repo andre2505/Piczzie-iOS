@@ -1,5 +1,5 @@
 //
-//  GiftView.swift
+//  FavoriteView.swift
 //  piczzie
 //
 //  Created by Thomas on 02/04/2020.
@@ -10,22 +10,22 @@ import SwiftUI
 import WaterfallGrid
 import SDWebImageSwiftUI
 
-struct GiftView: View {
+struct FavoriteView: View {
     
-    @ObservedObject var giftVM = GiftViewModel()
+    @ObservedObject var favoriteVM = FavoriteViewModel()
     
     var body: some View {
         VStack {
-            WaterfallGrid(giftVM) { (gift: Gift) in
+            WaterfallGrid(favoriteVM) { (gift: Gift) in
                 NavigationLink(destination: FriendsView()) {
-                    WebImage(url: URL(string: gift.image ?? ""))
+                    WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
                         .resizable()
                         .placeholder  {
                             Rectangle().foregroundColor(Color.gray)
                     }
                     .scaledToFit()
                     .onAppear {
-                        self.giftVM.loadMore(currentItem: gift)
+                        self.favoriteVM.loadMore(currentItem: gift)
                     }
                 }.buttonStyle(PlainButtonStyle())
             }.gridStyle(columns: 3, spacing: 1)
@@ -34,8 +34,8 @@ struct GiftView: View {
     }
 }
 
-struct GiftView_Previews: PreviewProvider {
+struct FavoriteView_Previews: PreviewProvider {
     static var previews: some View {
-        GiftView()
+        FavoriteView()
     }
 }

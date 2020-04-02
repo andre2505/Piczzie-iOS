@@ -15,14 +15,9 @@ struct ProfilView: View {
     @ObservedObject var profilVM = ProfilViewModel()
     
     @State var giftIsSelected : Bool = true
-    @State var isActive: Bool = false
-    let login = NSNotification.Name("login")
     
-    init() {
-        UIButton.appearance().adjustsImageWhenHighlighted = false
-        
-        
-    }
+    var giftView = GiftView()
+    
     var body: some View {
         NavigationView {
             VStack(spacing:0) {
@@ -74,12 +69,20 @@ struct ProfilView: View {
                 
                 Divider().frame(height: 0.5).background(Color("colorGrey10"))
                 
-                GiftView()
-                
+                if(self.giftIsSelected) {
+                    getGiftView()
+                } else {
+                    LoginView()
+                }
+               
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment:.top)
                 .background(Color.white)
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
             .background(Color.white)
+    }
+    
+    private func getGiftView() -> GiftView {
+        return giftView
     }
 }
 

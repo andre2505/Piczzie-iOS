@@ -14,6 +14,9 @@
 		E92A23D62435E35C0029F90D /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A23D52435E35C0029F90D /* FriendsView.swift */; };
 		E92A23D82435F0B90029F90D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A23D72435F0B90029F90D /* HostingController.swift */; };
 		E92A23DD2435F4470029F90D /* GiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A23DC2435F4470029F90D /* GiftView.swift */; };
+		E92A23DF2435F5A40029F90D /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A23DE2435F5A40029F90D /* GiftViewModel.swift */; };
+		E92A23E2243608B30029F90D /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A23E1243608B30029F90D /* FavoriteView.swift */; };
+		E92A23E4243608C00029F90D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A23E3243608C00029F90D /* FavoriteViewModel.swift */; };
 		E92D73472433A50C00EF22A8 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73462433A50C00EF22A8 /* UserSession.swift */; };
 		E92D734C2433A5E800EF22A8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73492433A5E800EF22A8 /* ImageLoader.swift */; };
 		E92D734D2433A5E800EF22A8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D734A2433A5E800EF22A8 /* ImageCache.swift */; };
@@ -80,6 +83,9 @@
 		E92A23D52435E35C0029F90D /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		E92A23D72435F0B90029F90D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		E92A23DC2435F4470029F90D /* GiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftView.swift; sourceTree = "<group>"; };
+		E92A23DE2435F5A40029F90D /* GiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		E92A23E1243608B30029F90D /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		E92A23E3243608C00029F90D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		E92D73462433A50C00EF22A8 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		E92D73492433A5E800EF22A8 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		E92D734A2433A5E800EF22A8 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -186,8 +192,18 @@
 			isa = PBXGroup;
 			children = (
 				E92A23DC2435F4470029F90D /* GiftView.swift */,
+				E92A23DE2435F5A40029F90D /* GiftViewModel.swift */,
 			);
 			path = gifts;
+			sourceTree = "<group>";
+		};
+		E92A23E0243608850029F90D /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E92A23E1243608B30029F90D /* FavoriteView.swift */,
+				E92A23E3243608C00029F90D /* FavoriteViewModel.swift */,
+			);
+			path = favorites;
 			sourceTree = "<group>";
 		};
 		E92D73452433A4A700EF22A8 /* utils */ = {
@@ -242,6 +258,7 @@
 		E92D73542433A72E00EF22A8 /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				E92A23E0243608850029F90D /* favorites */,
 				E92A23D92435F3A80029F90D /* gifts */,
 				E92D73552433A77C00EF22A8 /* ProfilView.swift */,
 				E92D73562433A77C00EF22A8 /* ProfilViewModel.swift */,
@@ -592,6 +609,7 @@
 				E92D734E2433A5E800EF22A8 /* ImageCacheKey.swift in Sources */,
 				E92D736F2433A95500EF22A8 /* UserRepository.swift in Sources */,
 				E92D738F2433B09200EF22A8 /* Colors.swift in Sources */,
+				E92A23E2243608B30029F90D /* FavoriteView.swift in Sources */,
 				E92D73792433A96300EF22A8 /* HandleErrorNetwork.swift in Sources */,
 				E92D735E2433A7B800EF22A8 /* MainView.swift in Sources */,
 				E92D734D2433A5E800EF22A8 /* ImageCache.swift in Sources */,
@@ -601,8 +619,10 @@
 				E92D73752433A96300EF22A8 /* Constant.swift in Sources */,
 				E92A23D62435E35C0029F90D /* FriendsView.swift in Sources */,
 				E92A23D82435F0B90029F90D /* HostingController.swift in Sources */,
+				E92A23DF2435F5A40029F90D /* GiftViewModel.swift in Sources */,
 				E92D73582433A77C00EF22A8 /* ProfilViewModel.swift in Sources */,
 				E92D737F2433AA3D00EF22A8 /* UserRouter.swift in Sources */,
+				E92A23E4243608C00029F90D /* FavoriteViewModel.swift in Sources */,
 				E92D734C2433A5E800EF22A8 /* ImageLoader.swift in Sources */,
 				E92D73772433A96300EF22A8 /* ServiceLayer.swift in Sources */,
 				E92D73912433B09A00EF22A8 /* Images.swift in Sources */,

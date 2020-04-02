@@ -15,17 +15,16 @@ struct FriendsView: View {
     var body: some View {
         VStack {
             VStack {
-                
-            
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .navigationBarBackButtonHidden(true)
-                .navigationBarItems(leading: Button(action:{
-                    self.presentationMode.wrappedValue.dismiss()
-                }){
-                    HStack {
-                        Image(systemName: "arrow.left")
-                    }
-                })
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    .navigationBarBackButtonHidden(true)
+                    .navigationBarItems(leading: Button(action:{
+                        self.presentationMode.wrappedValue.dismiss()
+                    }){
+                        HStack {
+                            Image("Back")
+                                .foregroundColor(Color.white)
+                        }
+                    })
             }
         }.frame(maxWidth:.infinity, maxHeight: .infinity, alignment: .top)
             .background(Color.white)
