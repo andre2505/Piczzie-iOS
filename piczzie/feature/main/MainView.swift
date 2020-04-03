@@ -11,8 +11,13 @@ import SwiftUI
 struct MainView: View {
     
     @State private var currentTab: Int = 0
-    private var profilView: ProfilView = ProfilView()
-    init() {
+    
+    @Binding var showMenu: Bool
+
+    init(_ showMenu : Binding<Bool>) {
+        
+         _showMenu = showMenu
+        
         UITabBar.appearance().barTintColor = .white
         UITabBar.appearance().tintColor = .blue
         
@@ -26,13 +31,16 @@ struct MainView: View {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = UIColor.white
-        
+
     }
     
     var body: some View {
+        
         ZStack {
+            
             Color("primaryColor").edgesIgnoringSafeArea(.top)
             Color.white.edgesIgnoringSafeArea(.bottom)
+            
             TabView(selection : $currentTab) {
                 
                 LoginView().tabItem {
@@ -48,25 +56,22 @@ struct MainView: View {
                 }.tag(2)
                 
                 NavigationView {
-                    getprofilView()
+                    ProfilView(showMenu: self.$showMenu)
                         .navigationBarHidden(true)
                         .navigationBarTitle(Text(""))
                     
                 }.tabItem {
-                    Image((currentTab == 3) ? "profil.selected" : "profil.unselected")
+                    Image((currentTab == 3) ? "profil.selected" : "profil.unselected").aspectRatio(CGSize(width: 26, height: 26), contentMode: .fit)
                 }.tag(3)
                 
             }.accentColor(Color("primaryColor"))
         }
     }
-    
-    private func getprofilView() -> ProfilView {
-        return profilView
-    }
+
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(.constant(false))
     }
 }

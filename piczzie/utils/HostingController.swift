@@ -9,7 +9,7 @@
 import UIKit
 import SwiftUI
 
-class HostingController: UIHostingController<MainView> {
+class HostingController: UIHostingController<ContentAppView> {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
