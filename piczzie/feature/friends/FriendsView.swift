@@ -11,6 +11,7 @@ import SwiftUI
 struct FriendsView: View {
     
     @Environment (\.presentationMode) var presentationMode
+    
     @GestureState private var dragOffset = CGSize.zero
     var body: some View {
         VStack {

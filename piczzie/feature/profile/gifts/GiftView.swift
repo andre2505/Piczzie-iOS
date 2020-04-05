@@ -12,32 +12,47 @@ import QGrid
 
 struct GiftView: View {
     
-    @ObservedObject var giftVM = GiftViewModel()
+    @ObservedObject var giftVM:GiftViewModel = GiftViewModel()
     
-    @State var showMenu: Bool = false
+    @State var isActive: Bool = false
+    
+    @State var isLoadFirst: Bool = false
+    
+    @State var firstLoading : Bool = true
+    
+    init() {
+      
+        UITableView.appearance().allowsSelection = false
+        UITableViewCell.appearance().selectionStyle = .none
+        
+        self.giftVM.getGifts(userId: getUser()?.id, offset: 0)
+        
+    }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            QGrid(giftVM,
-                  columns: 3,
-                  vSpacing: 1,
-                  hSpacing: 1,
-                  vPadding: 0,
-                  hPadding: 0) { (gift: Gift) in
-                    NavigationLink(destination: FriendsView()) {
-                        WebImage(url: URL(string: gift.image ?? ""))
-                            .resizable()
-                            .placeholder  {
-                                Rectangle().foregroundColor(Color.gray)
-                        }
-                        .scaledToFit()
-                        .onAppear {
-                            self.giftVM.loadMore(currentItem: gift)
-                        }
-                    }.buttonStyle(PlainButtonStyle())
+        VStack {
+            GridView(giftVM.giftList,
+                     columns: 3,
+                     vSpacing: 1,
+                     hSpacing: 1,
+                     vPadding: 0,
+                     hPadding: 0,
+                     showScrollIndicators: true) { (gift: Gift) in
+                        NavigationLink(destination: FriendsView()){
+                            WebImage(url: URL(string: gift.image ?? ""))
+                                .resizable()
+                                .placeholder  {
+                                    Rectangle().foregroundColor(Color.gray)
+                            }
+                            .scaledToFit()
+                            .onAppear {
+                                self.giftVM.loadMore(currentItem: gift)
+                            }
+                        }.edgesIgnoringSafeArea(.top)
             }.navigationBarTitle("profil", displayMode: .inline)
-        }.background(Color.white)
-    }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .buttonStyle(PlainButtonStyle())
+        }
 }
 
 struct GiftView_Previews: PreviewProvider {

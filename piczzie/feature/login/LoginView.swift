@@ -73,7 +73,7 @@ struct LoginView: View {
             
                     }
                     
-                    Text(loginVM.user.email!)
+                    Text(loginVM.user.email ?? "")
                     
                 }.padding()
                  .frame(width: 330, alignment: .center)

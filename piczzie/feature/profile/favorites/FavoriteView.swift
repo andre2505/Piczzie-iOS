@@ -16,7 +16,7 @@ struct FavoriteView: View {
     
     var body: some View {
         VStack {
-            QGrid(favoriteVM,
+            GridView(favoriteVM,
                   columns: 3,
                   vSpacing: 1,
                   hSpacing: 1, vPadding: 0, hPadding: 0) { (gift: Gift) in

@@ -15,11 +15,6 @@ class ProfilViewModel : ObservableObject {
     
     private var disposables = Set<AnyCancellable>()
     
-    init() {
-        //getUserInformations(userId: getUser()?.id, offset: 0)
-    }
-    
-    
     func getUserInformations(userId: String?,offset:Int, currentItem:Gift? = nil){
         
         GiftRepository.getUserGift(id: userId ?? "", offset: offset)

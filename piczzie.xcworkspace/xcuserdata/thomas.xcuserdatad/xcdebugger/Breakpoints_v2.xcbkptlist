@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D6E3853F-F992-4D76-BFDE-8E4FE51464E6"
+            uuid = "79A682AE-D245-43B2-BA12-F59035BD44CC"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "piczzie/feature/profile/gifts/GiftView.swift"
+            filePath = "piczzie/feature/profile/ProfilView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -23,15 +23,127 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AA7715A9-14F8-41D1-A3C5-DF0ED33C68C8"
+            uuid = "0471E70C-AA36-4884-A9C8-C829763B7366"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "piczzie/feature/profile/ProfilView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2854F686-EF2C-46F1-B20E-78AB1F321186"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "piczzie/feature/profile/ProfilView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25A49B47-CAD1-42CB-90D8-CDB99C688F1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "piczzie/feature/profile/ProfilView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15AF9C24-1104-4B54-AD46-9986A4AA7637"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "piczzie/utils/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0ECB3D52-7CC3-4CE8-9168-FC5F4B76F91F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "piczzie/utils/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0ECB3D52-7CC3-4CE8-9168-FC5F4B76F91F - fc33d4a83491c2fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.ScrollView&lt;&lt;&lt;opaque return type of piczzie.GridView.(content in _6707C978E8E0E9072F10D2F598A2BE24)(using: SwiftUI.GeometryProxy) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of piczzie.GridView.(content in _6707C978E8E0E9072F10D2F598A2BE24)(using: SwiftUI.GeometryProxy) -&gt; some&gt;&gt;.0&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in piczzie.GridView.body.getter : some"
+                  moduleName = "piczzie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomas/Development/Piczzie-iOS/piczzie/utils/GridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "1352">
+               </Location>
+               <Location
+                  uuid = "0ECB3D52-7CC3-4CE8-9168-FC5F4B76F91F - 7886b5b44258d08e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of piczzie.GridView.(content in _6707C978E8E0E9072F10D2F598A2BE24)(using: SwiftUI.GeometryProxy) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.ScrollView&lt;&lt;&lt;opaque return type of piczzie.GridView.(content in _6707C978E8E0E9072F10D2F598A2BE24)(using: SwiftUI.GeometryProxy) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of piczzie.GridView.(content in _6707C978E8E0E9072F10D2F598A2BE24)(using: SwiftUI.GeometryProxy) -&gt; some&gt;&gt;.0&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in piczzie.GridView.body.getter : some"
+                  moduleName = "piczzie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomas/Development/Piczzie-iOS/piczzie/utils/GridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DAEA31C-EA8E-4B7D-B1EA-66B103B4F826"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "piczzie/feature/profile/gifts/GiftView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>

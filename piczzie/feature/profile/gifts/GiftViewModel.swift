@@ -9,12 +9,13 @@
 import Foundation
 import Combine
 
-class GiftViewModel : ObservableObject, RandomAccessCollection {
+class GiftViewModel : ObservableObject, RandomAccessCollection, Identifiable {
     
     typealias Element = Gift
     
     @Published var user = User()
-    @Published var giftList = [Gift]()
+    
+    @Published private(set) var giftList: [Gift] = []
     
     private var disposables = Set<AnyCancellable>()
     
@@ -26,11 +27,6 @@ class GiftViewModel : ObservableObject, RandomAccessCollection {
     subscript(position: Int) -> Gift {
         return giftList[position]
     }
-    
-    init() {
-        getGifts(userId: getUser()?.id, offset: 0)
-    }
-    
     
     func getGifts(userId: String?,offset:Int, currentItem:Gift? = nil){
         

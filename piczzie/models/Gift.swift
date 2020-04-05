@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct Gift: Codable, Identifiable{
+struct Gift: Codable, Identifiable {
+    
+    var uid = UUID()
     
     var id: String?
     var description: String?

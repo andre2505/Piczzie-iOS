@@ -13,13 +13,14 @@ struct MainView: View {
     @State private var currentTab: Int = 0
     
     @Binding var showMenu: Bool
-
+    
     init(_ showMenu : Binding<Bool>) {
         
-         _showMenu = showMenu
+        _showMenu = showMenu
         
+        UITabBar.appearance().backgroundColor = UIColor.white
         UITabBar.appearance().barTintColor = .white
-        UITabBar.appearance().tintColor = .blue
+        UITabBar.appearance().tintColor = .white
         
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()
@@ -31,43 +32,42 @@ struct MainView: View {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = UIColor.white
-
+        
     }
     
     var body: some View {
-        
         ZStack {
-            
-            Color("primaryColor").edgesIgnoringSafeArea(.top)
-            Color.white.edgesIgnoringSafeArea(.bottom)
-            
-            TabView(selection : $currentTab) {
+            Color.white.edgesIgnoringSafeArea(.top)
+            (!self.showMenu) ? Color.white.edgesIgnoringSafeArea(.bottom) :
+                Color.black.opacity(0.5).edgesIgnoringSafeArea(.bottom)
+            TabView(selection : self.$currentTab) {
                 
                 LoginView().tabItem {
-                    Image((currentTab == 0) ? "home.selected" : "home.unselected")
+                    Image((self.currentTab == 0) ? "home.selected" : "home.unselected")
                 }.tag(0)
                 
-                FriendsView().tabItem {
-                   Image((currentTab == 1) ? "add.image.selected" : "add.image.unselected")
+                EmptyView().tabItem {
+                    Image((self.currentTab == 1) ? "add.image.selected" : "add.image.unselected")
                 }.tag(1)
                 
-                FriendsView().tabItem {
-                   Image((currentTab == 2) ? "search.selected" : "search.unselected")
+                EmptyView().tabItem {
+                    Image((self.currentTab == 2) ? "search.selected" : "search.unselected")
                 }.tag(2)
-                
                 NavigationView {
-                    ProfilView(showMenu: self.$showMenu)
+                    ProfilView(showMenu: $showMenu)
                         .navigationBarHidden(true)
                         .navigationBarTitle(Text(""))
-                    
-                }.tabItem {
-                    Image((currentTab == 3) ? "profil.selected" : "profil.unselected").aspectRatio(CGSize(width: 26, height: 26), contentMode: .fit)
+                }
+                .tabItem {
+                    Image((self.currentTab == 3) ? "profil.selected" : "profil.unselected")
                 }.tag(3)
-                
             }.accentColor(Color("primaryColor"))
+                .edgesIgnoringSafeArea(.bottom)
+                .padding(.bottom, 1)
+                .background(Color.white)
         }
     }
-
+    
 }
 
 struct MainView_Previews: PreviewProvider {

@@ -11,9 +11,7 @@ import SwiftUI
 struct ContentAppView: View {
     
     @State var showMenu : Bool = false
-    
-    
-    
+
     var body: some View {
         GeometryReader { geometry in
             ZStack() {
@@ -30,14 +28,15 @@ struct ContentAppView: View {
                             .transition(.move(edge: .trailing))
                     }
                 }
-            }.edgesIgnoringSafeArea(.top)  
-        }
+            }.edgesIgnoringSafeArea(.top)
+                
+        }.environment(\.colorScheme, .light)
         
     }
 }
 
 struct ContentAppView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentViewView()
+        ContentAppView()
     }
 }

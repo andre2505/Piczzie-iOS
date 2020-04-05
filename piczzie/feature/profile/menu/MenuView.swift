@@ -12,7 +12,7 @@ struct MenuView: View {
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.top)
-           
+            Color.white.edgesIgnoringSafeArea(.bottom)
             VStack(alignment: .leading) {
                 HStack {
                     Image(systemName: "person")

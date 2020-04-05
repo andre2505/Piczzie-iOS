@@ -16,10 +16,7 @@ class LoginViewModel: ObservableObject {
     
     private var disposables = Set<AnyCancellable>()
     
-    init() {
-        user.email = ""
-    }
-    
+   
     func login(email: String, password: String){
         
         user.email = email
