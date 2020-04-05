@@ -12,27 +12,34 @@ import QGrid
 
 struct FavoriteView: View {
     
-    @ObservedObject var favoriteVM = FavoriteViewModel()
+    @EnvironmentObject var favoriteVM: FavoriteViewModel
+    
+    @State var firstLoading: Bool = true
     
     var body: some View {
         VStack {
             GridView(favoriteVM,
-                  columns: 3,
-                  vSpacing: 1,
-                  hSpacing: 1, vPadding: 0, hPadding: 0) { (gift: Gift) in
-                NavigationLink(destination: FriendsView()) {
-                    WebImage(url: URL(string: gift.image ?? ""))
-                        .resizable()
-                        .placeholder  {
-                            Rectangle().foregroundColor(Color.gray)
-                    }
-                    .scaledToFit()
-                    /*.onAppear {
-                     self.favoriteVM.loadMore(currentItem: gift)
-                     }*/
-                }.buttonStyle(PlainButtonStyle())
+                     columns: 3,
+                     vSpacing: 1,
+                     hSpacing: 1,
+                     vPadding: 0,
+                     hPadding: 0) { (gift: Gift) in
+                        NavigationLink(destination: FriendsView()) {
+                            WebImage(url: URL(string: gift.image ?? ""))
+                                .resizable()
+                                .placeholder  {
+                                    Rectangle().foregroundColor(Color.gray)
+                            }
+                            .scaledToFit()
+                        }.buttonStyle(PlainButtonStyle())
             }.navigationBarTitle("profil", displayMode: .inline)
         }.background(Color.white)
+            .onAppear {
+                if(self.firstLoading) {
+                    self.favoriteVM.getFavoriteGifts()
+                    self.firstLoading = false
+                }
+        }
     }
 }
 

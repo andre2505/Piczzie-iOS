@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 
 struct ProfilView: View {
     
+    @EnvironmentObject var giftVM: GiftViewModel
     
     @ObservedObject var profilVM = ProfilViewModel()
     
@@ -21,7 +22,11 @@ struct ProfilView: View {
     @State var navigagtionAppear : Bool = true
     
     var favoriteView = FavoriteView()
-  
+    
+    var giftView = GiftView()
+    
+    @State var heighGiftView : CGFloat = 0
+    
     var body: some View {
         NavigationView {
             VStack(spacing:0) {
@@ -53,7 +58,7 @@ struct ProfilView: View {
                             .frame(maxWidth: .infinity) :  Image("GiftUnselected")
                                 .foregroundColor(Color.gray)
                                 .frame(maxWidth: .infinity)
-                    }
+                    }.buttonStyle(PlainButtonStyle())
                     
                     Button(action: {
                         self.giftIsSelected = false
@@ -64,7 +69,7 @@ struct ProfilView: View {
                             .frame(maxWidth: .infinity) :  Image("FavoriteSelected")
                                 .foregroundColor(Color("colorPink"))
                                 .frame(maxWidth: .infinity)
-                    }
+                    }.buttonStyle(PlainButtonStyle())
                     
                 }.padding(14)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -72,11 +77,10 @@ struct ProfilView: View {
                 
                 Divider().frame(height: 0.5).background(Color("colorGrey10"))
                 
-                if(self.giftIsSelected) {
-                    GiftView()
-                } else {
-                    FavoriteView()
-                }
+                
+                GiftView().opacity((self.giftIsSelected) ? 1:0).frame(minHeight: 0, maxHeight: (self.giftIsSelected) ? .infinity : 0)
+                
+                FavoriteView().opacity((self.giftIsSelected) ? 0:1)
                 
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .background(Color.white)

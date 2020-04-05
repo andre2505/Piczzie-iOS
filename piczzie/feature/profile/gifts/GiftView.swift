@@ -12,7 +12,7 @@ import QGrid
 
 struct GiftView: View {
     
-    @ObservedObject var giftVM:GiftViewModel = GiftViewModel()
+    @EnvironmentObject var giftVM:GiftViewModel
     
     @State var isActive: Bool = false
     
@@ -20,14 +20,7 @@ struct GiftView: View {
     
     @State var firstLoading : Bool = true
     
-    init() {
-      
-        UITableView.appearance().allowsSelection = false
-        UITableViewCell.appearance().selectionStyle = .none
-        
-        self.giftVM.getGifts(userId: getUser()?.id, offset: 0)
-        
-    }
+    @State var firstAppear: Bool = true
     
     var body: some View {
         VStack {
@@ -52,7 +45,13 @@ struct GiftView: View {
             }.navigationBarTitle("profil", displayMode: .inline)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .buttonStyle(PlainButtonStyle())
+            .onAppear{
+                if(self.firstAppear){
+                    self.giftVM.getGifts(userId: getUser()?.id, offset: 0)
+                    self.firstAppear = false
+                }
         }
+    }
 }
 
 struct GiftView_Previews: PreviewProvider {

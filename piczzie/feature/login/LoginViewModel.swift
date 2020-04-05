@@ -29,7 +29,7 @@ class LoginViewModel: ObservableObject {
             case .failure(let error):
                 print(error)
             case .finished:
-                print("GET - DONE")
+                print("Login")
             }
         }, receiveValue: { user in
             self.user = user

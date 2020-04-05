@@ -13,8 +13,6 @@ class GiftViewModel : ObservableObject, RandomAccessCollection, Identifiable {
     
     typealias Element = Gift
     
-    @Published var user = User()
-    
     @Published private(set) var giftList: [Gift] = []
     
     private var disposables = Set<AnyCancellable>()
@@ -23,6 +21,7 @@ class GiftViewModel : ObservableObject, RandomAccessCollection, Identifiable {
     var endIndex: Int {giftList.endIndex}
    
     var currentLoading = false
+    
     
     subscript(position: Int) -> Gift {
         return giftList[position]
@@ -37,7 +36,7 @@ class GiftViewModel : ObservableObject, RandomAccessCollection, Identifiable {
                  case .failure(let error):
                      print(error)
                  case .finished:
-                     print("GET - DONE")
+                     print("GET - DONE GIFT")
                  }
                 self.currentLoading = false
              }, receiveValue: { gift in

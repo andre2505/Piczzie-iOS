@@ -24,7 +24,7 @@ class ProfilViewModel : ObservableObject {
                  case .failure(let error):
                      print(error)
                  case .finished:
-                     print("GET - DONE")
+                     print("GET - DONE PROFIL")
                  }
                
              }, receiveValue: { gift in

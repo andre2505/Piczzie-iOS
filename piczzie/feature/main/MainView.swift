@@ -39,25 +39,26 @@ struct MainView: View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.top)
             (!self.showMenu) ? Color.white.edgesIgnoringSafeArea(.bottom) :
-                Color.black.opacity(0.5).edgesIgnoringSafeArea(.bottom)
+                Color.white.opacity(0.5).edgesIgnoringSafeArea(.bottom)
             TabView(selection : self.$currentTab) {
                 
                 LoginView().tabItem {
                     Image((self.currentTab == 0) ? "home.selected" : "home.unselected")
                 }.tag(0)
                 
-                EmptyView().tabItem {
+                TransparencyView().tabItem {
                     Image((self.currentTab == 1) ? "add.image.selected" : "add.image.unselected")
                 }.tag(1)
                 
-                EmptyView().tabItem {
+                TransparencyView().tabItem {
                     Image((self.currentTab == 2) ? "search.selected" : "search.unselected")
                 }.tag(2)
                 NavigationView {
                     ProfilView(showMenu: $showMenu)
                         .navigationBarHidden(true)
                         .navigationBarTitle(Text(""))
-                }
+                    }.environmentObject(GiftViewModel())
+                    .environmentObject(FavoriteViewModel())
                 .tabItem {
                     Image((self.currentTab == 3) ? "profil.selected" : "profil.unselected")
                 }.tag(3)

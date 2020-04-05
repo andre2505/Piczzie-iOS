@@ -26,10 +26,6 @@ class FavoriteViewModel : ObservableObject, RandomAccessCollection {
         return giftList[position]
     }
     
-    init() {
-        getFavoriteGifts()
-    }
-    
     func getFavoriteGifts(){
         
         GiftRepository.getFavoriteUserGift()
@@ -39,7 +35,7 @@ class FavoriteViewModel : ObservableObject, RandomAccessCollection {
                  case .failure(let error):
                      print(error)
                  case .finished:
-                     print("GET - DONE")
+                     print("GET - DONE FAVORITE")
                  }
                 self.currentLoading = false
              }, receiveValue: { gift in

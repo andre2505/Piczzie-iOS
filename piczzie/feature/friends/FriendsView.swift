@@ -34,6 +34,7 @@ struct FriendsView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }
             }))
+        
     }
 }
 
