@@ -16,7 +16,7 @@ struct ContentAppView: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-                VStack {
+                VStack(spacing:0) {
                     
                     MainView(self.$showMenu, self.$currentTab)
                     
