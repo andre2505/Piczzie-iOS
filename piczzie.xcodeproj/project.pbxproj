@@ -45,7 +45,6 @@
 		E92D737F2433AA3D00EF22A8 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D737C2433AA3D00EF22A8 /* UserRouter.swift */; };
 		E92D73832433AA8800EF22A8 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73812433AA8800EF22A8 /* Gift.swift */; };
 		E92D73842433AA8800EF22A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73822433AA8800EF22A8 /* User.swift */; };
-		E92D738A2433AC0800EF22A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92D73892433AC0800EF22A8 /* Localizable.strings */; };
 		E92D738C2433AE2C00EF22A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D738B2433AE2C00EF22A8 /* Colors.xcassets */; };
 		E92D738F2433B09200EF22A8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D738E2433B09200EF22A8 /* Colors.swift */; };
 		E92D73912433B09A00EF22A8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D73902433B09A00EF22A8 /* Images.swift */; };
@@ -58,7 +57,7 @@
 		E947D0E12433A216005DCF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E947D0DF2433A216005DCF90 /* LaunchScreen.storyboard */; };
 		E947D0EC2433A217005DCF90 /* piczzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0EB2433A217005DCF90 /* piczzieTests.swift */; };
 		E947D0F72433A217005DCF90 /* piczzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0F62433A217005DCF90 /* piczzieUITests.swift */; };
-		E96BFB54243A938900321F4D /* PziTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFB53243A938900321F4D /* PziTabView.swift */; };
+		E96BFB58243B959100321F4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96BFB5A243B959100321F4D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +120,6 @@
 		E92D737C2433AA3D00EF22A8 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		E92D73812433AA8800EF22A8 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		E92D73822433AA8800EF22A8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E92D73892433AC0800EF22A8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E92D738B2433AE2C00EF22A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../Colors.xcassets; sourceTree = "<group>"; };
 		E92D738E2433B09200EF22A8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E92D73902433B09A00EF22A8 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -140,7 +138,8 @@
 		E947D0F22433A217005DCF90 /* piczzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piczzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E947D0F62433A217005DCF90 /* piczzieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piczzieUITests.swift; sourceTree = "<group>"; };
 		E947D0F82433A217005DCF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E96BFB53243A938900321F4D /* PziTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PziTabView.swift; sourceTree = "<group>"; };
+		E96BFB59243B959100321F4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E96BFB5E243B95C500321F4D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FDE3891C99FF9D36DD9D46B5 /* Pods-piczzie-piczzieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piczzie-piczzieUITests.debug.xcconfig"; path = "Target Support Files/Pods-piczzie-piczzieUITests/Pods-piczzie-piczzieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,12 +264,10 @@
 		E92D73512433A71000EF22A8 /* feature */ = {
 			isa = PBXGroup;
 			children = (
-				E92A23EF24378E200029F90D /* ContentAppView.swift */,
 				E92A23D42435E33E0029F90D /* friends */,
 				E92D73542433A72E00EF22A8 /* profile */,
 				E92D73532433A72700EF22A8 /* login */,
 				E92D73522433A72100EF22A8 /* main */,
-				E96BFB53243A938900321F4D /* PziTabView.swift */,
 			);
 			path = feature;
 			sourceTree = "<group>";
@@ -278,6 +275,7 @@
 		E92D73522433A72100EF22A8 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				E92A23EF24378E200029F90D /* ContentAppView.swift */,
 				E92D735D2433A7B800EF22A8 /* MainView.swift */,
 			);
 			path = main;
@@ -403,7 +401,7 @@
 				E947D0DF2433A216005DCF90 /* LaunchScreen.storyboard */,
 				E947D0E22433A216005DCF90 /* Info.plist */,
 				E947D0DC2433A216005DCF90 /* Preview Content */,
-				E92D73892433AC0800EF22A8 /* Localizable.strings */,
+				E96BFB5A243B959100321F4D /* Localizable.strings */,
 			);
 			path = piczzie;
 			sourceTree = "<group>";
@@ -526,6 +524,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = E947D0C82433A20F005DCF90;
 			packageReferences = (
@@ -547,7 +546,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92D738A2433AC0800EF22A8 /* Localizable.strings in Resources */,
+				E96BFB58243B959100321F4D /* Localizable.strings in Resources */,
 				E947D0E12433A216005DCF90 /* LaunchScreen.storyboard in Resources */,
 				E92D738C2433AE2C00EF22A8 /* Colors.xcassets in Resources */,
 				E92A23D32434C3200029F90D /* Images.xcassets in Resources */,
@@ -652,7 +651,6 @@
 				E92D73762433A96300EF22A8 /* ErrorNetwork.swift in Sources */,
 				E92D73842433AA8800EF22A8 /* User.swift in Sources */,
 				E92D734E2433A5E800EF22A8 /* ImageCacheKey.swift in Sources */,
-				E96BFB54243A938900321F4D /* PziTabView.swift in Sources */,
 				E92D736F2433A95500EF22A8 /* UserRepository.swift in Sources */,
 				E92A23EA24374F9D0029F90D /* MenuView.swift in Sources */,
 				E92D738F2433B09200EF22A8 /* Colors.swift in Sources */,
@@ -729,6 +727,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E96BFB5A243B959100321F4D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96BFB59243B959100321F4D /* en */,
+				E96BFB5E243B95C500321F4D /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -736,6 +743,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -796,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

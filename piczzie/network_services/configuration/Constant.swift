@@ -9,9 +9,11 @@
 import Foundation
 
 #if DEVELOPMENT
+let scheme = "http:\\"
 let endpoint = "192.168.1.51"
 let port = 8080
 #elseif DEBUG
+let scheme = "http:\\"
 let endpoint = "192.168.1.51"
 let port = 8080
 

@@ -61,18 +61,21 @@ struct ContentAppView: View {
                 }
             }
             
-            if self.showMenu {
-                TransparencyView().background(Color.black.opacity(0.5))
-                    .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.5)))
+           
+            TransparencyView().background(Color.black.opacity( self.showMenu  ? 0.6 : 0))
+                    .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.4)))
+                    .animation(.easeInOut(duration: 0.4))
                     .edgesIgnoringSafeArea(.all)
+                    .onTapGesture {
+                        self.showMenu = false
             }
             
             GeometryReader { geometry in
                 if self.showMenu {
-                    MenuView().frame(maxWidth: geometry.size.width / 2)
-                        .offset(x: geometry.size.width / 2)
+                    MenuView().frame(maxWidth: geometry.size.width)
+                        .offset(x: geometry.size.width / 4)
                         .transition(.move(edge: .trailing))
-                        .animation(.easeInOut(duration: 0.5))
+                        .animation(.easeInOut(duration: 0.4))
                 }
             }
         }.edgesIgnoringSafeArea(.bottom)

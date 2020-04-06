@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum Strings: String {
+    case profile = "profile"
+
+}

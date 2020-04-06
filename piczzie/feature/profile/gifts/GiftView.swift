@@ -35,14 +35,14 @@ struct GiftView: View {
                             WebImage(url: URL(string: gift.image ?? ""))
                                 .resizable()
                                 .placeholder  {
-                                    Rectangle().foregroundColor(Color.gray)
+                                    Rectangle().foregroundColor(Color("colorGrey10"))
                             }
                             .scaledToFit()
                             .onAppear {
                                 self.giftVM.loadMore(currentItem: gift)
                             }
                         }.edgesIgnoringSafeArea(.top)
-            }.navigationBarTitle("profil", displayMode: .inline)
+            }.navigationBarTitle("profile", displayMode: .inline)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .buttonStyle(PlainButtonStyle())
             .onAppear{

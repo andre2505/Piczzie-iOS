@@ -23,8 +23,8 @@ struct MainView: View {
         coloredAppearance.configureWithOpaqueBackground()
         coloredAppearance.backgroundColor = UIColor(named: "primaryColor")
         
-        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white,.font: UIFont(name: "Helvetica", size: 20)!]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "Georgia-Bold", size: 20)!]
         
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
@@ -41,8 +41,6 @@ struct MainView: View {
             TransparencyView().opacity(self.currentTab == 2 ? 1 : 0)
             
             ProfilView(showMenu: $showMenu)
-                .navigationBarHidden(true)
-                .navigationBarTitle(Text(""))
                 .environmentObject(GiftViewModel())
                 .environmentObject(FavoriteViewModel())
                 .opacity(self.currentTab == 3 ? 1 : 0)

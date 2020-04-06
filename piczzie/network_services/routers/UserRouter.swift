@@ -12,11 +12,14 @@ enum UserRouter : Router {
    
     //POST method
     case login
+    case userInformation
     
     var path: String {
       switch self {
       case .login:
         return "/login"
+      case.userInformation:
+        return "/api/user/{id}"
       }
     }
 }

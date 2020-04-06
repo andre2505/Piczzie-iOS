@@ -15,9 +15,9 @@ class ProfilViewModel : ObservableObject {
     
     private var disposables = Set<AnyCancellable>()
     
-    func getUserInformations(userId: String?,offset:Int, currentItem:Gift? = nil){
+    func getUserInformations(userId: String?){
         
-        GiftRepository.getUserGift(id: userId ?? "", offset: offset)
+        UserRepository.getUserInformation(id: userId!)
         .receive(on: DispatchQueue.main)
                  .sink(receiveCompletion: { (completion) in
                  switch completion {
@@ -27,8 +27,8 @@ class ProfilViewModel : ObservableObject {
                      print("GET - DONE PROFIL")
                  }
                
-             }, receiveValue: { gift in
-               
+             }, receiveValue: { user in
+                self.user = user
              })
         .store(in: &disposables)
     }
