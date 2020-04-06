@@ -58,6 +58,7 @@
 		E947D0E12433A216005DCF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E947D0DF2433A216005DCF90 /* LaunchScreen.storyboard */; };
 		E947D0EC2433A217005DCF90 /* piczzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0EB2433A217005DCF90 /* piczzieTests.swift */; };
 		E947D0F72433A217005DCF90 /* piczzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0F62433A217005DCF90 /* piczzieUITests.swift */; };
+		E96BFB54243A938900321F4D /* PziTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFB53243A938900321F4D /* PziTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		E947D0F22433A217005DCF90 /* piczzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piczzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E947D0F62433A217005DCF90 /* piczzieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piczzieUITests.swift; sourceTree = "<group>"; };
 		E947D0F82433A217005DCF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96BFB53243A938900321F4D /* PziTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PziTabView.swift; sourceTree = "<group>"; };
 		FDE3891C99FF9D36DD9D46B5 /* Pods-piczzie-piczzieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piczzie-piczzieUITests.debug.xcconfig"; path = "Target Support Files/Pods-piczzie-piczzieUITests/Pods-piczzie-piczzieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +270,7 @@
 				E92D73542433A72E00EF22A8 /* profile */,
 				E92D73532433A72700EF22A8 /* login */,
 				E92D73522433A72100EF22A8 /* main */,
+				E96BFB53243A938900321F4D /* PziTabView.swift */,
 			);
 			path = feature;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				E92D73762433A96300EF22A8 /* ErrorNetwork.swift in Sources */,
 				E92D73842433AA8800EF22A8 /* User.swift in Sources */,
 				E92D734E2433A5E800EF22A8 /* ImageCacheKey.swift in Sources */,
+				E96BFB54243A938900321F4D /* PziTabView.swift in Sources */,
 				E92D736F2433A95500EF22A8 /* UserRepository.swift in Sources */,
 				E92A23EA24374F9D0029F90D /* MenuView.swift in Sources */,
 				E92D738F2433B09200EF22A8 /* Colors.swift in Sources */,

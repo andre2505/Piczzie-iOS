@@ -51,7 +51,7 @@ struct UITabBarWrapper: View {
             
             hostingController.tabBarItem = UITabBarItem( // 3
                 title: $1.tabBarElementItem.title,
-                image: UIImage.init(systemName: $1.tabBarElementItem.systemImageName),
+                image: UIImage.init(systemName: $1.tabBarElementItem.named),
                 tag: $0 // 4
             )
             
@@ -68,7 +68,7 @@ struct UITabBarWrapper_Previews: PreviewProvider {
     static var previews: some View {
         UITabBarWrapper([
             TabBarElement(tabBarElementItem:
-                TabBarElementItem(title: "Test 1", systemImageName: "house.fill")) {
+                TabBarElementItem(title: "Test 1", named: "house.fill")) {
                     Text("Test 1 Text")
             }
         ])

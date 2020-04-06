@@ -10,17 +10,14 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var currentTab: Int = 0
+    @Binding private var currentTab: Int
     
     @Binding var showMenu: Bool
     
-    init(_ showMenu : Binding<Bool>) {
+    init(_ showMenu : Binding<Bool>, _ currentTab: Binding<Int>) {
         
         _showMenu = showMenu
-        
-        UITabBar.appearance().backgroundColor = UIColor.white
-        UITabBar.appearance().barTintColor = .white
-        UITabBar.appearance().tintColor = .white
+        _currentTab = currentTab
         
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()
@@ -37,42 +34,24 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Color.white.edgesIgnoringSafeArea(.top)
-            (!self.showMenu) ? Color.white.edgesIgnoringSafeArea(.bottom) :
-                Color.white.opacity(0.5).edgesIgnoringSafeArea(.bottom)
-            TabView(selection : self.$currentTab) {
-                
-                LoginView().tabItem {
-                    Image((self.currentTab == 0) ? "home.selected" : "home.unselected")
-                }.tag(0)
-                
-                TransparencyView().tabItem {
-                    Image((self.currentTab == 1) ? "add.image.selected" : "add.image.unselected")
-                }.tag(1)
-                
-                TransparencyView().tabItem {
-                    Image((self.currentTab == 2) ? "search.selected" : "search.unselected")
-                }.tag(2)
-                NavigationView {
-                    ProfilView(showMenu: $showMenu)
-                        .navigationBarHidden(true)
-                        .navigationBarTitle(Text(""))
-                    }.environmentObject(GiftViewModel())
-                    .environmentObject(FavoriteViewModel())
-                .tabItem {
-                    Image((self.currentTab == 3) ? "profil.selected" : "profil.unselected")
-                }.tag(3)
-            }.accentColor(Color("primaryColor"))
-                .edgesIgnoringSafeArea(.bottom)
-                .padding(.bottom, 1)
-                .background(Color.white)
+            LoginView().opacity(self.currentTab == 0 ? 1 : 0)
+            
+            TransparencyView().opacity(self.currentTab == 1 ? 1 : 0)
+            
+            TransparencyView().opacity(self.currentTab == 2 ? 1 : 0)
+            
+            ProfilView(showMenu: $showMenu)
+                .navigationBarHidden(true)
+                .navigationBarTitle(Text(""))
+                .environmentObject(GiftViewModel())
+                .environmentObject(FavoriteViewModel())
+                .opacity(self.currentTab == 3 ? 1 : 0)
         }
     }
-    
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(.constant(false))
+        MainView(.constant(false), .constant(0))
     }
 }

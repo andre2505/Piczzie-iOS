@@ -3,7 +3,7 @@ import SwiftUI
 // 1
 struct TabBarElementItem {
     var title: String
-    var systemImageName: String
+    var named: String
 }
 
 // 2
@@ -33,7 +33,7 @@ struct TabBarElement: TabBarElementView { // 1
 struct TabBarElement_Previews: PreviewProvider {
     static var previews: some View {
         TabBarElement(tabBarElementItem: .init(title: "Test",
-                                               systemImageName: "house.fill")) {
+                                               named: "house.fill")) {
                                                 Text("Hello, world!")
         }
     }

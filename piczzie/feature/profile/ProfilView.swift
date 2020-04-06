@@ -13,6 +13,8 @@ struct ProfilView: View {
     
     @EnvironmentObject var giftVM: GiftViewModel
     
+    @EnvironmentObject var FavoriteVM: FavoriteViewModel
+    
     @ObservedObject var profilVM = ProfilViewModel()
     
     @Binding var showMenu: Bool
@@ -21,14 +23,12 @@ struct ProfilView: View {
     
     @State var navigagtionAppear : Bool = true
     
-    var favoriteView = FavoriteView()
-    
-    var giftView = GiftView()
-    
-    @State var heighGiftView : CGFloat = 0
+   @State var heighGiftView : CGFloat = 0
     
     var body: some View {
+        ZStack {
         NavigationView {
+            
             VStack(spacing:0) {
                 VStack {
                     WebImage(url: URL(string: "http://192.168.1.51:8080/uploads/5c447f1d19c08bbdd4373353/profil/telechargement.png"))
@@ -93,15 +93,8 @@ struct ProfilView: View {
                     }
                 })
         }
-        
+        }
     }
-    
-    
-    
-    private func getFavoriteView() -> FavoriteView {
-        return favoriteView
-    }
-    
 }
 
 
