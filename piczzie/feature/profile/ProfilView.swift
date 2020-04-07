@@ -91,10 +91,10 @@ struct ProfileDescriptionView: View {
     
     @EnvironmentObject var profilVM : ProfilViewModel
     
-    private let formatter = DateFormatter()
+    private static let formatter = DateFormatter()
     
     init(){
-        formatter.dateStyle = .long
+        ProfileDescriptionView.formatter.dateStyle = .long
     }
     
     var body: some View {
@@ -113,10 +113,12 @@ struct ProfileDescriptionView: View {
             .frame(width: 100, height: 100)
             .scaledToFit()
             
+            Spacer().frame(height: 2)
+            
             Text("\(self.profilVM.user.lastname ?? "") \(self.profilVM.user.firstname ?? "")")
                 .font(.custom("Helvetica Bold", size: 16))
             HStack {
-                Text("\(formatter.string(from: self.profilVM.user.birthday ?? Date()) )")
+                Text("\(ProfileDescriptionView.formatter.string(from: self.profilVM.user.birthday ?? Date()) )")
             }
         }.padding()
             .frame(maxWidth: .infinity, alignment: .center)
