@@ -16,7 +16,6 @@ class ProfilViewModel : ObservableObject {
     private var disposables = Set<AnyCancellable>()
     
     func getUserInformations(userId: String?){
-        
         UserRepository.getUserInformation(id: userId!)
         .receive(on: DispatchQueue.main)
                  .sink(receiveCompletion: { (completion) in

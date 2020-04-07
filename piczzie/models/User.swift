@@ -13,9 +13,14 @@ struct User: Codable{
     var id: String?
     var firstname : String?
     var lastname: String?
+    var gender: Int?
     var password: String?
     var email : String?
+    var birthday: Date?
     var photo: String?
+    var friends: [User]?
+    var state: Int?
+    var friendsId: String?
     var token: String?
     var refreshToken: String?
     
@@ -23,9 +28,14 @@ struct User: Codable{
         case id = "_id"
         case firstname = "firstname"
         case lastname = "lastname"
+        case gender = "gender"
         case password = "password"
         case email = "email"
+        case birthday = "birthday"
         case photo = "photo"
+        case friends = "friends"
+        case state = "state"
+        case friendsId = "friends_id"
         case token = "token"
         case refreshToken = "refresh_token"
     }
@@ -34,9 +44,15 @@ struct User: Codable{
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encodeIfPresent(id, forKey: .id)
         try container.encodeIfPresent(firstname, forKey: .firstname)
+        try container.encodeIfPresent(lastname, forKey: .lastname)
+        try container.encodeIfPresent(gender, forKey: .gender)
         try container.encodeIfPresent(email, forKey: .email)
+        try container.encodeIfPresent(birthday, forKey: .birthday)
         try container.encodeIfPresent(photo, forKey: .photo)
         try container.encodeIfPresent(password, forKey: .password)
+        try container.encodeIfPresent(friends, forKey: .friends)
+        try container.encodeIfPresent(state, forKey: .state)
+        try container.encodeIfPresent(friendsId, forKey: .friendsId)
         try container.encodeIfPresent(token, forKey: .token)
         try container.encodeIfPresent(refreshToken, forKey: .refreshToken)
     }
@@ -48,7 +64,7 @@ struct User: Codable{
         try container.decode(String.self, forKey: .email)
         try container.decode(String.self, forKey: .photo)
         try container.decode(String.self, forKey: .password)
-        try container.decode(String.self, forKey:.token)
+        try container.decode(String.self, forKey: .token)
         try container.decode(String.self, forKey: .refreshToken)
         
     }

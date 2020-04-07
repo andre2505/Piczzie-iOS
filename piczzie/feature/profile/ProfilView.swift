@@ -11,11 +11,7 @@ import SDWebImageSwiftUI
 
 struct ProfilView: View {
     
-    @EnvironmentObject var giftVM: GiftViewModel
-    
-    @EnvironmentObject var FavoriteVM: FavoriteViewModel
-    
-    @ObservedObject var profilVM = ProfilViewModel()
+    @EnvironmentObject var profilVM : ProfilViewModel
     
     @Binding var showMenu: Bool
     
@@ -25,57 +21,18 @@ struct ProfilView: View {
     
     @State var heighGiftView : CGFloat = 0
     
+    @State var firstAppear: Bool = true
+    
     var body: some View {
         ZStack {
             NavigationView {
-                
                 VStack(spacing:0) {
-                    VStack {
-                        WebImage(url: URL(string: "http://192.168.1.51:8080/\(getUser()?.photo ?? "")"))
-                            .resizable()
-                            .placeholder  {
-                                Rectangle().foregroundColor(Color.gray)
-                        }
-                        .clipShape(Circle())
-                        .shadow(radius: 10)
-                        .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                        .frame(width: 100, height: 100)
-                        .scaledToFit()
-                        
-                        Text("profil")
-                    }.padding()
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .background(Color("colorGrey10"))
+                    
+                    ProfileDescriptionView()
+                    
                     Divider().frame(height: 0.5).background(Color("colorGrey10"))
                     
-                    HStack{
-                        Button(action: {
-                            
-                            
-                        }) {
-                            Text("Amis")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(Color.gray)
-                            .frame(maxWidth: .infinity)
-                        }.buttonStyle(PlainButtonStyle())
-                        
-                        
-                        Divider().frame(maxWidth: 1, maxHeight: 50)
-                            .background(Color("colorGrey10"))
-                        
-                        Button(action: {
-                            
-                            
-                        }) {
-                            Text("Enfant")
-                                    .frame(maxWidth: .infinity)
-                                    .foregroundColor(Color.gray)
-                                    .frame(maxWidth: .infinity)
-                        }.buttonStyle(PlainButtonStyle())
-                        
-                        
-                    }.frame(maxWidth:.infinity, alignment: .center)
-                        .background(Color.white)
+                    RelationshipView()
                     
                     Divider().frame(height: 0.5).background(Color("colorGrey10"))
                     HStack {
@@ -130,6 +87,42 @@ struct ProfilView: View {
     }
 }
 
+struct ProfileDescriptionView: View {
+    
+    @EnvironmentObject var profilVM : ProfilViewModel
+    
+    private let formatter = DateFormatter()
+    
+    init(){
+        formatter.dateStyle = .long
+    }
+    
+    var body: some View {
+        VStack(spacing: 10) {
+            
+            Spacer().frame(height: 10)
+            
+            WebImage(url: URL(string: "http://192.168.1.51:8080/\(getUser()?.photo ?? "")"))
+                .resizable()
+                .placeholder  {
+                    Rectangle().foregroundColor(Color.gray)
+            }
+            .clipShape(Circle())
+            .shadow(radius: 10)
+            .overlay(Circle().stroke(Color.white, lineWidth: 2))
+            .frame(width: 100, height: 100)
+            .scaledToFit()
+            
+            Text("\(self.profilVM.user.lastname ?? "") \(self.profilVM.user.firstname ?? "")")
+                .font(.custom("Helvetica Bold", size: 16))
+            HStack {
+                Text("\(formatter.string(from: self.profilVM.user.birthday ?? Date()) )")
+            }
+        }.padding()
+            .frame(maxWidth: .infinity, alignment: .center)
+            .background(Color("colorGrey10"))
+    }
+}
 
 struct ProfilView_Previews: PreviewProvider {
     static var previews: some View {

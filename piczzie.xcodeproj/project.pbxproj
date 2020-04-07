@@ -58,6 +58,7 @@
 		E947D0EC2433A217005DCF90 /* piczzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0EB2433A217005DCF90 /* piczzieTests.swift */; };
 		E947D0F72433A217005DCF90 /* piczzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947D0F62433A217005DCF90 /* piczzieUITests.swift */; };
 		E96BFB58243B959100321F4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96BFB5A243B959100321F4D /* Localizable.strings */; };
+		E96BFB60243BE94B00321F4D /* RelationshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFB5F243BE94B00321F4D /* RelationshipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		E947D0F82433A217005DCF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E96BFB59243B959100321F4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E96BFB5E243B95C500321F4D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E96BFB5F243BE94B00321F4D /* RelationshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipView.swift; sourceTree = "<group>"; };
 		FDE3891C99FF9D36DD9D46B5 /* Pods-piczzie-piczzieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piczzie-piczzieUITests.debug.xcconfig"; path = "Target Support Files/Pods-piczzie-piczzieUITests/Pods-piczzie-piczzieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,6 +266,7 @@
 		E92D73512433A71000EF22A8 /* feature */ = {
 			isa = PBXGroup;
 			children = (
+				E92A23E824374F5B0029F90D /* menu */,
 				E92A23D42435E33E0029F90D /* friends */,
 				E92D73542433A72E00EF22A8 /* profile */,
 				E92D73532433A72700EF22A8 /* login */,
@@ -293,7 +296,7 @@
 		E92D73542433A72E00EF22A8 /* profile */ = {
 			isa = PBXGroup;
 			children = (
-				E92A23E824374F5B0029F90D /* menu */,
+				E96BFB61243BEF6700321F4D /* components */,
 				E92A23E0243608850029F90D /* favorites */,
 				E92A23D92435F3A80029F90D /* gifts */,
 				E92D73552433A77C00EF22A8 /* ProfilView.swift */,
@@ -430,6 +433,14 @@
 				E947D0F82433A217005DCF90 /* Info.plist */,
 			);
 			path = piczzieUITests;
+			sourceTree = "<group>";
+		};
+		E96BFB61243BEF6700321F4D /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E96BFB5F243BE94B00321F4D /* RelationshipView.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,6 +670,7 @@
 				E92D73792433A96300EF22A8 /* HandleErrorNetwork.swift in Sources */,
 				E92D735E2433A7B800EF22A8 /* MainView.swift in Sources */,
 				E92D734D2433A5E800EF22A8 /* ImageCache.swift in Sources */,
+				E96BFB60243BE94B00321F4D /* RelationshipView.swift in Sources */,
 				E92A23F92438D8930029F90D /* TabBarElement.swift in Sources */,
 				E92A23F72438D78E0029F90D /* UITabBarWrapper.swift in Sources */,
 				E9343194243A0E350026E39E /* GridView.swift in Sources */,

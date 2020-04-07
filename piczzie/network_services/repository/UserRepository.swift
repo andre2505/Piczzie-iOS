@@ -19,9 +19,9 @@ class UserRepository {
     }
     
     static func getUserInformation(id: String) ->AnyPublisher<User, Error> {
-        return try! post(url: UserRouter.userInformation, path:nil,  body: id)
+        return try! get(url: UserRouter.userInformation, path: ["id" : id])
             .tryMap{ try validate($0.data, $0.response) }
-            .decode(type: User.self, decoder: JSONDecoder())
+            .decode(type: User.self, decoder: JSONDecoderPCZI.decodePCZI())
             .eraseToAnyPublisher()
     }
 }

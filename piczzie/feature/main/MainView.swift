@@ -41,6 +41,7 @@ struct MainView: View {
             TransparencyView().opacity(self.currentTab == 2 ? 1 : 0)
             
             ProfilView(showMenu: $showMenu)
+                .environmentObject(ProfilViewModel())
                 .environmentObject(GiftViewModel())
                 .environmentObject(FavoriteViewModel())
                 .opacity(self.currentTab == 3 ? 1 : 0)

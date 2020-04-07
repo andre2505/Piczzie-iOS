@@ -12,7 +12,7 @@ import QGrid
 
 struct GiftView: View {
     
-    @EnvironmentObject var giftVM:GiftViewModel
+    @EnvironmentObject var giftVM: GiftViewModel
     
     @State var isActive: Bool = false
     
