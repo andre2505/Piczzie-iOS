@@ -28,7 +28,7 @@ struct FavoriteView: View {
                             WebImage(url: URL(string: gift.image ?? ""))
                                 .resizable()
                                 .placeholder  {
-                                    Rectangle().foregroundColor(Color.gray)
+                                    Rectangle().foregroundColor(Color("colorGrey"))
                             }
                             .scaledToFit()
                         }.buttonStyle(PlainButtonStyle())

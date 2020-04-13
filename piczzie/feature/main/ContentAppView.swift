@@ -10,12 +10,9 @@ import SwiftUI
 
 struct ContentAppView: View {
     
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    
     @State var showMenu : Bool = false
     
     @State var currentTab: Int = 0
-    
     var body: some View {
         ZStack {
             GeometryReader { geometry in

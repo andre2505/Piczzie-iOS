@@ -24,4 +24,11 @@ class UserRepository {
             .decode(type: User.self, decoder: JSONDecoderPCZI.decodePCZI())
             .eraseToAnyPublisher()
     }
+    
+    static func getFriendsList(id: String) ->AnyPublisher<[User], Error> {
+        return try! get(url: UserRouter.getFriends, path: ["id" : id])
+            .tryMap{ try validate($0.data, $0.response) }
+            .decode(type: [User].self, decoder: JSONDecoderPCZI.decodePCZI())
+            .eraseToAnyPublisher()
+    }
 }

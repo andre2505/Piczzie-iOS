@@ -24,26 +24,22 @@ struct GiftView: View {
     
     var body: some View {
         VStack {
-            GridView(giftVM.giftList,
-                     columns: 3,
-                     vSpacing: 1,
-                     hSpacing: 1,
-                     vPadding: 0,
-                     hPadding: 0,
-                     showScrollIndicators: true) { (gift: Gift) in
-                        NavigationLink(destination: FriendsView()){
-                            WebImage(url: URL(string: gift.image ?? ""))
-                                .resizable()
-                                .placeholder  {
-                                    Rectangle().foregroundColor(Color("colorGrey10"))
-                            }
-                            .scaledToFit()
-                            .onAppear {
-                                self.giftVM.loadMore(currentItem: gift)
-                            }
-                        }.edgesIgnoringSafeArea(.top)
-            }.navigationBarTitle("profile", displayMode: .inline)
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            GridView(giftVM,
+                         columns: 3,
+                         vSpacing: 1,
+                         hSpacing: 1,
+                         vPadding: 0,
+                         hPadding: 0) { (gift: Gift) in
+                            NavigationLink(destination: FriendsView()) {
+                                WebImage(url: URL(string: gift.image ?? ""))
+                                    .resizable()
+                                    .placeholder  {
+                                        Rectangle().foregroundColor(Color("colorGrey"))
+                                }
+                                .scaledToFit()
+                            }.buttonStyle(PlainButtonStyle())
+                }.navigationBarTitle("profil", displayMode: .inline)
+            }.background(Color.white)
             .buttonStyle(PlainButtonStyle())
             .onAppear{
                 if(self.firstAppear){

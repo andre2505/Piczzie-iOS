@@ -7,3 +7,9 @@
 */
 
 "profile" = "Profile";
+"%@ Friends" = "%@ \nFriends";
+"%@ Children" = "%@ \nChildren";
+"%@ Friend" = "%@ \nFriend";
+"%@ Child" = "%@ \nChild";
+"Children" = "Children";
+"Friends" = "Friends";

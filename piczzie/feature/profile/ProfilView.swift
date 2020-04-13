@@ -13,6 +13,8 @@ struct ProfilView: View {
     
     @EnvironmentObject var profilVM : ProfilViewModel
     
+    @Environment (\.presentationMode) var presentationMode
+    
     @Binding var showMenu: Bool
     
     @State var giftIsSelected : Bool = true
@@ -66,9 +68,9 @@ struct ProfilView: View {
                     Divider().frame(height: 0.5).background(Color("colorGrey10"))
                     
                     
-                    GiftView().opacity((self.giftIsSelected) ? 1:0).frame(minHeight: 0, maxHeight: (self.giftIsSelected) ? .infinity : 0)
+                    GiftView().opacity((self.giftIsSelected) ? 1:0).frame(minHeight: 0, maxHeight: (self.giftIsSelected) ? .infinity : 0).environmentObject(profilVM)
                     
-                    FavoriteView().opacity((self.giftIsSelected) ? 0:1)
+                    FavoriteView().opacity((self.giftIsSelected) ? 0:1).frame(minHeight: 0, maxHeight: (self.giftIsSelected) ? 0 : .infinity)
                     
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                     .background(Color.white)
@@ -77,13 +79,15 @@ struct ProfilView: View {
                     }){
                         HStack {
                             Image("settings")
+                                .resizable()
                                 .foregroundColor(Color.white)
+                                .frame(maxWidth: 22, maxHeight: 22)
                         }
                     })
             }
         }.onAppear {
             self.profilVM.getUserInformations(userId: getUser()?.id)
-        }
+        }.navigationViewStyle(DefaultNavigationViewStyle())
     }
 }
 
@@ -105,15 +109,21 @@ struct ProfileDescriptionView: View {
             WebImage(url: URL(string: "http://192.168.1.51:8080/\(getUser()?.photo ?? "")"))
                 .resizable()
                 .placeholder  {
-                    Rectangle().foregroundColor(Color.gray)
+                    ZStack {
+                        Rectangle().foregroundColor(.white)
+                        Image("profile.man")
+                            .resizable()
+                            .foregroundColor(Color("colorGrey"))
+                    }
             }
             .clipShape(Circle())
-            .shadow(radius: 10)
-            .overlay(Circle().stroke(Color.white, lineWidth: 2))
+            .shadow(radius: 5)
+            .overlay(Circle()
+            .stroke(Color.white, lineWidth: 2))
             .frame(width: 100, height: 100)
             .scaledToFit()
             
-            Spacer().frame(height: 2)
+            Spacer().frame(height: 5)
             
             Text("\(self.profilVM.user.lastname ?? "") \(self.profilVM.user.firstname ?? "")")
                 .font(.custom("Helvetica Bold", size: 16))
@@ -132,4 +142,5 @@ struct ProfilView_Previews: PreviewProvider {
     }
     
 }
+
 

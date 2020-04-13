@@ -7,33 +7,62 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct FriendsView: View {
     
     @Environment (\.presentationMode) var presentationMode
     
+    @EnvironmentObject var profilVM: ProfilViewModel
+    
+    @ObservedObject var friendsVM = FriendsViewModel()
+    
     @GestureState private var dragOffset = CGSize.zero
+    
+    init(){
+        UITableView.appearance().separatorColor = .gray
+        UITableView.appearance().separatorStyle = .singleLine
+        UITableView.appearance().tableFooterView = UIView()
+    }
+    
     var body: some View {
+        
         VStack {
-            VStack {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                    .navigationBarBackButtonHidden(true)
-                    .navigationBarItems(leading: Button(action:{
-                        self.presentationMode.wrappedValue.dismiss()
-                    }){
-                        HStack {
-                            Image("Back")
-                                .foregroundColor(Color.white)
+            List(self.friendsVM.friendsList){ (user :User) in
+                NavigationLink(destination: EmptyView()){
+                    HStack {
+                        WebImage(url: URL(string: "http://192.168.1.51:8080/\(getUser()?.photo ?? "")"))
+                            .resizable()
+                            .placeholder  {
+                                ZStack {
+                                    Rectangle().foregroundColor(.white)
+                                    Image("profile.man")
+                                        .resizable()
+                                        .foregroundColor(Color("colorGrey"))
+                                }
                         }
-                    })
-            }
+                        .clipShape(Circle())
+                        .overlay(Circle()
+                        .stroke(Color.white, lineWidth: 2))
+                        .frame(width: 30, height: 30)
+                        .scaledToFit()
+                        
+                        Text("\(user.lastname ?? "") \(user.firstname ?? "")")
+                    }
+                }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.white)
+                .navigationBarItems(leading: BackButtonNavigationView())
+                .navigationBarTitle("Friends")
         }.frame(maxWidth:.infinity, maxHeight: .infinity, alignment: .top)
-            .background(Color.white)
             .gesture(DragGesture().updating($dragOffset, body: { (value, state, transaction) in
+                
                 if(value.startLocation.x < 20 && value.translation.width > 100) {
                     self.presentationMode.wrappedValue.dismiss()
                 }
-            }))
+            })).onAppear {
+                self.friendsVM.getUser(userId: getUser()?.id ?? "")
+        }
         
     }
 }

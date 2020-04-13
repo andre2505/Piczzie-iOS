@@ -13,6 +13,7 @@ enum UserRouter : Router {
     //POST method
     case login
     case userInformation
+    case getFriends
     
     var path: String {
       switch self {
@@ -20,6 +21,8 @@ enum UserRouter : Router {
         return "/login"
       case.userInformation:
         return "/api/user/{id}"
+      case .getFriends:
+        return "/api/user/friends/{id}"
       }
     }
 }
