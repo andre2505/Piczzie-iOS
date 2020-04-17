@@ -29,14 +29,13 @@ struct MainView: View {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = UIColor.white
-        
     }
     
     var body: some View {
         ZStack {
-            LoginView().opacity(self.currentTab == 0 ? 1 : 0)
+            HomeView().opacity(self.currentTab == 0 ? 1 : 0)
             
-            TransparencyView().opacity(self.currentTab == 1 ? 1 : 0)
+            LoginView().opacity(self.currentTab == 1 ? 1 : 0)
             
             TransparencyView().opacity(self.currentTab == 2 ? 1 : 0)
             

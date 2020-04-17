@@ -6,8 +6,9 @@ target 'piczzie' do
   #use_frameworks!
   use_modular_headers!
   # Pods for piczzie
-  pod 'WaterfallGrid', '~> 0.4.0'
+  #pod 'WaterfallGrid', '~> 0.4.0'
   pod 'SDWebImageSwiftUI'
+  pod 'YPImagePicker'
  
   target 'piczzieTests' do
     inherit! :search_paths

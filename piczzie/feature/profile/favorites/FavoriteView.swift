@@ -8,7 +8,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
-import QGrid
+
 
 struct FavoriteView: View {
     

@@ -20,7 +20,7 @@ class ProfilViewModel : ObservableObject {
     private var disposables = Set<AnyCancellable>()
     
     func getUserInformations(userId: String?){
-        UserRepository.getUserInformation(id: userId!)
+        UserRepository.getUserInformation(id: userId ?? "")
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { (completion) in
                 switch completion {
@@ -38,7 +38,7 @@ class ProfilViewModel : ObservableObject {
     
     
     func getChildren(userId: String?){
-        ChildRepository.getChildren(userId: userId!)
+        ChildRepository.getChildren(userId: userId ?? "")
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { (completion) in
                 switch completion {

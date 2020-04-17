@@ -11,7 +11,21 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                
+            }.navigationBarTitle("Piczzie", displayMode: .inline)
+                .navigationBarItems(trailing: NavigationLink(destination: CameraView()){
+                    HStack {
+                        Image(systemName: "camera.fill")
+                            .resizable()
+                            .foregroundColor(Color.white)
+                            .frame(maxWidth: 22, maxHeight: 22)
+                    }
+                })
+            
+        }
     }
 }
 
